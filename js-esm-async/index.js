@@ -3,9 +3,7 @@ const fs = require("fs");
 const { webpack_4_0, webpack4, webpack5, plugins } = require("../index");
 const LogRuntimeHooksOrderPlugin = require("log-runtime-hooks-order-webpack-plugin");
 
-const {
-  CleanWebpackPlugin
-} = plugins
+const { CleanWebpackPlugin } = plugins;
 
 const cwd = process.cwd();
 
@@ -17,7 +15,7 @@ function getWebpack40Config() {
   const config = getConfig();
 
   config.output.path = getPath("v4-0", config.output.path);
-  config.plugins.push(new CleanWebpackPlugin())
+  config.plugins.push(new CleanWebpackPlugin());
 
   return config;
 }
@@ -26,7 +24,7 @@ function getWebpack4Config() {
   const config = getConfig();
 
   config.output.path = getPath("v4", config.output.path);
-  config.plugins.push(new CleanWebpackPlugin())
+  config.plugins.push(new CleanWebpackPlugin());
 
   return config;
 }
@@ -71,6 +69,13 @@ function getConfig() {
   const compiler = webpack(config);
 
   compiler.run((err, stats) => {
+    if (stats && stats.toJson) {
+      let json = stats.toJson();
+      let text = JSON.stringify(json, null, 2);
+      let file = path.join(config.output.path, "stats.json");
+
+      fs.appendFileSync(file, text, "utf8");
+    }
     console.log("callback called 111");
   });
 });

@@ -1,0 +1,1514 @@
+{
+  "hash": "bb0a7290da0d042ed9ca",
+  "version": "5.89.0",
+  "time": 213,
+  "builtAt": 1705584389574,
+  "publicPath": "auto",
+  "outputPath": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\v5\\dist",
+  "assetsByChunkName": {
+    "main": [
+      "main.js"
+    ],
+    "chunk-foo": [
+      "chunk-foo.js"
+    ],
+    "chunk-a": [
+      "chunk-a.js"
+    ]
+  },
+  "assets": [
+    {
+      "type": "asset",
+      "name": "main.js",
+      "size": 12735,
+      "emitted": false,
+      "comparedForEmit": true,
+      "cached": false,
+      "info": {
+        "javascriptModule": false,
+        "size": 12735
+      },
+      "chunkNames": [
+        "main"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [
+        "main"
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "chunk-a.js",
+      "size": 862,
+      "emitted": false,
+      "comparedForEmit": true,
+      "cached": false,
+      "info": {
+        "javascriptModule": false,
+        "size": 862
+      },
+      "chunkNames": [
+        "chunk-a"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [
+        "chunk-a"
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "chunk-foo.js",
+      "size": 586,
+      "emitted": false,
+      "comparedForEmit": true,
+      "cached": false,
+      "info": {
+        "javascriptModule": false,
+        "size": 586
+      },
+      "chunkNames": [
+        "chunk-foo"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [
+        "chunk-foo"
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    }
+  ],
+  "chunks": [
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 131,
+      "sizes": {
+        "javascript": 131
+      },
+      "names": [
+        "chunk-a"
+      ],
+      "idHints": [],
+      "runtime": [
+        "main"
+      ],
+      "files": [
+        "chunk-a.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "5b0fe36d6ab928f2e9aa",
+      "childrenByOrder": {},
+      "id": "chunk-a",
+      "siblings": [],
+      "parents": [
+        "main"
+      ],
+      "children": [
+        "chunk-foo"
+      ],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 131,
+          "sizes": {
+            "javascript": 131
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\mod-a.js",
+          "name": "./src/mod-a.js",
+          "nameForCondition": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\mod-a.js",
+          "index": 3,
+          "preOrderIndex": 3,
+          "index2": 3,
+          "postOrderIndex": 3,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
+          "issuerName": "./src/main.js",
+          "issuerPath": [
+            {
+              "identifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
+              "name": "./src/main.js",
+              "id": "./src/main.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "./src/mod-a.js",
+          "issuerId": "./src/main.js",
+          "chunks": [
+            "chunk-a"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
+              "module": "./src/main.js",
+              "moduleName": "./src/main.js",
+              "resolvedModuleIdentifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
+              "resolvedModule": "./src/main.js",
+              "type": "import()",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./mod-a.js",
+              "loc": "13:2-15:16",
+              "moduleId": "./src/main.js",
+              "resolvedModuleId": "./src/main.js"
+            }
+          ],
+          "usedExports": null,
+          "providedExports": [
+            "default",
+            "y"
+          ],
+          "optimizationBailout": [],
+          "depth": 1
+        }
+      ],
+      "origins": [
+        {
+          "module": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
+          "moduleIdentifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
+          "moduleName": "./src/main.js",
+          "loc": "13:2-15:16",
+          "request": "./mod-a.js",
+          "moduleId": "./src/main.js"
+        }
+      ]
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 21,
+      "sizes": {
+        "javascript": 21
+      },
+      "names": [
+        "chunk-foo"
+      ],
+      "idHints": [],
+      "runtime": [
+        "main"
+      ],
+      "files": [
+        "chunk-foo.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "d0d6ca41929bbb0d273d",
+      "childrenByOrder": {},
+      "id": "chunk-foo",
+      "siblings": [],
+      "parents": [
+        "chunk-a",
+        "main"
+      ],
+      "children": [],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 21,
+          "sizes": {
+            "javascript": 21
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\foo.js",
+          "name": "./src/foo.js",
+          "nameForCondition": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\foo.js",
+          "index": 2,
+          "preOrderIndex": 2,
+          "index2": 2,
+          "postOrderIndex": 2,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
+          "issuerName": "./src/main.js",
+          "issuerPath": [
+            {
+              "identifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
+              "name": "./src/main.js",
+              "id": "./src/main.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "./src/foo.js",
+          "issuerId": "./src/main.js",
+          "chunks": [
+            "chunk-foo"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
+              "module": "./src/main.js",
+              "moduleName": "./src/main.js",
+              "resolvedModuleIdentifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
+              "resolvedModule": "./src/main.js",
+              "type": "import()",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./foo.js",
+              "loc": "7:2-9:14",
+              "moduleId": "./src/main.js",
+              "resolvedModuleId": "./src/main.js"
+            },
+            {
+              "moduleIdentifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\mod-a.js",
+              "module": "./src/mod-a.js",
+              "moduleName": "./src/mod-a.js",
+              "resolvedModuleIdentifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\mod-a.js",
+              "resolvedModule": "./src/mod-a.js",
+              "type": "import()",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./foo.js",
+              "loc": "4:2-20",
+              "moduleId": "./src/mod-a.js",
+              "resolvedModuleId": "./src/mod-a.js"
+            }
+          ],
+          "usedExports": null,
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 1
+        }
+      ],
+      "origins": [
+        {
+          "module": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
+          "moduleIdentifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
+          "moduleName": "./src/main.js",
+          "loc": "7:2-9:14",
+          "request": "./foo.js",
+          "moduleId": "./src/main.js"
+        },
+        {
+          "module": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\mod-a.js",
+          "moduleIdentifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\mod-a.js",
+          "moduleName": "./src/mod-a.js",
+          "loc": "4:2-20",
+          "request": "./foo.js",
+          "moduleId": "./src/mod-a.js"
+        }
+      ]
+    },
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 7283,
+      "sizes": {
+        "javascript": 404,
+        "runtime": 6879
+      },
+      "names": [
+        "main"
+      ],
+      "idHints": [],
+      "runtime": [
+        "main"
+      ],
+      "files": [
+        "main.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "73ef6c0073bd6db24e23",
+      "childrenByOrder": {},
+      "id": "main",
+      "siblings": [],
+      "parents": [],
+      "children": [
+        "chunk-a",
+        "chunk-foo"
+      ],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 381,
+          "sizes": {
+            "javascript": 381
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
+          "name": "./src/main.js",
+          "nameForCondition": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
+          "index": 0,
+          "preOrderIndex": 0,
+          "index2": 1,
+          "postOrderIndex": 1,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "./src/main.js",
+          "issuerId": null,
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": "entry",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./src/main.js",
+              "loc": "main",
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": null,
+          "providedExports": [
+            "hello"
+          ],
+          "optimizationBailout": [],
+          "depth": 0
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 23,
+          "sizes": {
+            "javascript": 23
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\mod-b.js",
+          "name": "./src/mod-b.js",
+          "nameForCondition": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\mod-b.js",
+          "index": 1,
+          "preOrderIndex": 1,
+          "index2": 0,
+          "postOrderIndex": 0,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
+          "issuerName": "./src/main.js",
+          "issuerPath": [
+            {
+              "identifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
+              "name": "./src/main.js",
+              "id": "./src/main.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "./src/mod-b.js",
+          "issuerId": "./src/main.js",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
+              "module": "./src/main.js",
+              "moduleName": "./src/main.js",
+              "resolvedModuleIdentifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
+              "resolvedModule": "./src/main.js",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./mod-b.js",
+              "loc": "2:0-26",
+              "moduleId": "./src/main.js",
+              "resolvedModuleId": "./src/main.js"
+            },
+            {
+              "moduleIdentifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
+              "module": "./src/main.js",
+              "moduleName": "./src/main.js",
+              "resolvedModuleIdentifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
+              "resolvedModule": "./src/main.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./mod-b.js",
+              "loc": "22:2-3",
+              "moduleId": "./src/main.js",
+              "resolvedModuleId": "./src/main.js"
+            }
+          ],
+          "usedExports": null,
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 1
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 308,
+          "sizes": {
+            "runtime": 308
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/define property getters",
+          "name": "webpack/runtime/define property getters",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 326,
+          "sizes": {
+            "runtime": 326
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/ensure chunk",
+          "name": "webpack/runtime/ensure chunk",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 167,
+          "sizes": {
+            "runtime": 167
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/get javascript chunk filename",
+          "name": "webpack/runtime/get javascript chunk filename",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 221,
+          "sizes": {
+            "runtime": 221
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/global",
+          "name": "webpack/runtime/global",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 88,
+          "sizes": {
+            "runtime": 88
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/hasOwnProperty shorthand",
+          "name": "webpack/runtime/hasOwnProperty shorthand",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 3065,
+          "sizes": {
+            "runtime": 3065
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/jsonp chunk loading",
+          "name": "webpack/runtime/jsonp chunk loading",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 1507,
+          "sizes": {
+            "runtime": 1507
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/load script",
+          "name": "webpack/runtime/load script",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 274,
+          "sizes": {
+            "runtime": 274
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/make namespace object",
+          "name": "webpack/runtime/make namespace object",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "layer": null,
+          "size": 923,
+          "sizes": {
+            "runtime": 923
+          },
+          "built": false,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "webpack/runtime/publicPath",
+          "name": "webpack/runtime/publicPath",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        }
+      ],
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "main",
+          "request": "./src/main.js"
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 381,
+      "sizes": {
+        "javascript": 381
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
+      "name": "./src/main.js",
+      "nameForCondition": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
+      "index": 0,
+      "preOrderIndex": 0,
+      "index2": 1,
+      "postOrderIndex": 1,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "./src/main.js",
+      "issuerId": null,
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "resolvedModuleIdentifier": null,
+          "resolvedModule": null,
+          "type": "entry",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./src/main.js",
+          "loc": "main",
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": null,
+      "providedExports": [
+        "hello"
+      ],
+      "optimizationBailout": [],
+      "depth": 0
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 23,
+      "sizes": {
+        "javascript": 23
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\mod-b.js",
+      "name": "./src/mod-b.js",
+      "nameForCondition": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\mod-b.js",
+      "index": 1,
+      "preOrderIndex": 1,
+      "index2": 0,
+      "postOrderIndex": 0,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
+      "issuerName": "./src/main.js",
+      "issuerPath": [
+        {
+          "identifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
+          "name": "./src/main.js",
+          "id": "./src/main.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "./src/mod-b.js",
+      "issuerId": "./src/main.js",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
+          "module": "./src/main.js",
+          "moduleName": "./src/main.js",
+          "resolvedModuleIdentifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
+          "resolvedModule": "./src/main.js",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./mod-b.js",
+          "loc": "2:0-26",
+          "moduleId": "./src/main.js",
+          "resolvedModuleId": "./src/main.js"
+        },
+        {
+          "moduleIdentifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
+          "module": "./src/main.js",
+          "moduleName": "./src/main.js",
+          "resolvedModuleIdentifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
+          "resolvedModule": "./src/main.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./mod-b.js",
+          "loc": "22:2-3",
+          "moduleId": "./src/main.js",
+          "resolvedModuleId": "./src/main.js"
+        }
+      ],
+      "usedExports": null,
+      "providedExports": [
+        "default"
+      ],
+      "optimizationBailout": [],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 21,
+      "sizes": {
+        "javascript": 21
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\foo.js",
+      "name": "./src/foo.js",
+      "nameForCondition": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\foo.js",
+      "index": 2,
+      "preOrderIndex": 2,
+      "index2": 2,
+      "postOrderIndex": 2,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
+      "issuerName": "./src/main.js",
+      "issuerPath": [
+        {
+          "identifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
+          "name": "./src/main.js",
+          "id": "./src/main.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "./src/foo.js",
+      "issuerId": "./src/main.js",
+      "chunks": [
+        "chunk-foo"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
+          "module": "./src/main.js",
+          "moduleName": "./src/main.js",
+          "resolvedModuleIdentifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
+          "resolvedModule": "./src/main.js",
+          "type": "import()",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./foo.js",
+          "loc": "7:2-9:14",
+          "moduleId": "./src/main.js",
+          "resolvedModuleId": "./src/main.js"
+        },
+        {
+          "moduleIdentifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\mod-a.js",
+          "module": "./src/mod-a.js",
+          "moduleName": "./src/mod-a.js",
+          "resolvedModuleIdentifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\mod-a.js",
+          "resolvedModule": "./src/mod-a.js",
+          "type": "import()",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./foo.js",
+          "loc": "4:2-20",
+          "moduleId": "./src/mod-a.js",
+          "resolvedModuleId": "./src/mod-a.js"
+        }
+      ],
+      "usedExports": null,
+      "providedExports": [
+        "default"
+      ],
+      "optimizationBailout": [],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 131,
+      "sizes": {
+        "javascript": 131
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\mod-a.js",
+      "name": "./src/mod-a.js",
+      "nameForCondition": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\mod-a.js",
+      "index": 3,
+      "preOrderIndex": 3,
+      "index2": 3,
+      "postOrderIndex": 3,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
+      "issuerName": "./src/main.js",
+      "issuerPath": [
+        {
+          "identifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
+          "name": "./src/main.js",
+          "id": "./src/main.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "./src/mod-a.js",
+      "issuerId": "./src/main.js",
+      "chunks": [
+        "chunk-a"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
+          "module": "./src/main.js",
+          "moduleName": "./src/main.js",
+          "resolvedModuleIdentifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
+          "resolvedModule": "./src/main.js",
+          "type": "import()",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./mod-a.js",
+          "loc": "13:2-15:16",
+          "moduleId": "./src/main.js",
+          "resolvedModuleId": "./src/main.js"
+        }
+      ],
+      "usedExports": null,
+      "providedExports": [
+        "default",
+        "y"
+      ],
+      "optimizationBailout": [],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 308,
+      "sizes": {
+        "runtime": 308
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/define property getters",
+      "name": "webpack/runtime/define property getters",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 326,
+      "sizes": {
+        "runtime": 326
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/ensure chunk",
+      "name": "webpack/runtime/ensure chunk",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 167,
+      "sizes": {
+        "runtime": 167
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/get javascript chunk filename",
+      "name": "webpack/runtime/get javascript chunk filename",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 221,
+      "sizes": {
+        "runtime": 221
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/global",
+      "name": "webpack/runtime/global",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 88,
+      "sizes": {
+        "runtime": 88
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/hasOwnProperty shorthand",
+      "name": "webpack/runtime/hasOwnProperty shorthand",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 3065,
+      "sizes": {
+        "runtime": 3065
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/jsonp chunk loading",
+      "name": "webpack/runtime/jsonp chunk loading",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 1507,
+      "sizes": {
+        "runtime": 1507
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/load script",
+      "name": "webpack/runtime/load script",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 274,
+      "sizes": {
+        "runtime": 274
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/make namespace object",
+      "name": "webpack/runtime/make namespace object",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 923,
+      "sizes": {
+        "runtime": 923
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/publicPath",
+      "name": "webpack/runtime/publicPath",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    }
+  ],
+  "entrypoints": {
+    "main": {
+      "name": "main",
+      "chunks": [
+        "main"
+      ],
+      "assets": [
+        {
+          "name": "main.js",
+          "size": 12735
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 12735,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "namedChunkGroups": {
+    "main": {
+      "name": "main",
+      "chunks": [
+        "main"
+      ],
+      "assets": [
+        {
+          "name": "main.js",
+          "size": 12735
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 12735,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    },
+    "chunk-foo": {
+      "name": "chunk-foo",
+      "chunks": [
+        "chunk-foo"
+      ],
+      "assets": [
+        {
+          "name": "chunk-foo.js",
+          "size": 586
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 586,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    },
+    "chunk-a": {
+      "name": "chunk-a",
+      "chunks": [
+        "chunk-a"
+      ],
+      "assets": [
+        {
+          "name": "chunk-a.js",
+          "size": 862
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 862,
+      "auxiliaryAssets": [],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "errors": [],
+  "errorsCount": 0,
+  "warnings": [],
+  "warningsCount": 0,
+  "children": []
+}
