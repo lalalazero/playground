@@ -284,12 +284,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function hello(msg) {
+	console.log('hello msg', msg)
 	if (msg) {
-		__webpack_require__.e(/*! import() | chunk-foo-a */ "chunk-foo-a").then(__webpack_require__.bind(__webpack_require__, /*! ./foo.js */ "./src/foo.js")).then((mod) => {
+		__webpack_require__.e(/*! import() | chunk-foo */ "chunk-foo").then(__webpack_require__.bind(__webpack_require__, /*! ./foo.js */ "./src/foo.js")).then((mod) => {
 			console.log("foo is ", mod)
 		})
 
-		__webpack_require__.e(/*! import() | chunk-foo-a */ "chunk-foo-a").then(__webpack_require__.bind(__webpack_require__, /*! ./mod-a.js */ "./src/mod-a.js")).then(mod => {
+		__webpack_require__.e(/*! import() | chunk-a */ "chunk-a").then(__webpack_require__.bind(__webpack_require__, /*! ./mod-a.js */ "./src/mod-a.js")).then(mod => {
 			mod.y()
 		})
 	}

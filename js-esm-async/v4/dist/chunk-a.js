@@ -1,18 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["chunk-foo-a"],{
-
-/***/ "./src/foo.js":
-/*!********************!*\
-  !*** ./src/foo.js ***!
-  \********************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ('foo');
-
-
-/***/ }),
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["chunk-a"],{
 
 /***/ "./src/mod-a.js":
 /*!**********************!*\
@@ -27,7 +13,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const y = (m) => {
 	if(m) {
-		Promise.resolve().then(__webpack_require__.bind(null, /*! ./foo.js */"./src/foo.js")).then(mod => {
+		__webpack_require__.e(/*! import() */ "chunk-foo").then(__webpack_require__.bind(null, /*! ./foo.js */ "./src/foo.js")).then(mod => {
 			console.log(m + mod.default)
 		})
 	}

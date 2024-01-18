@@ -1,7 +1,11 @@
 const path = require("path");
 const fs = require("fs");
-const { webpack_4_0, webpack4, webpack5 } = require("../index");
+const { webpack_4_0, webpack4, webpack5, plugins } = require("../index");
 const LogRuntimeHooksOrderPlugin = require("log-runtime-hooks-order-webpack-plugin");
+
+const {
+  CleanWebpackPlugin
+} = plugins
 
 const cwd = process.cwd();
 
@@ -13,6 +17,7 @@ function getWebpack40Config() {
   const config = getConfig();
 
   config.output.path = getPath("v4-0", config.output.path);
+  config.plugins.push(new CleanWebpackPlugin())
 
   return config;
 }
@@ -21,6 +26,7 @@ function getWebpack4Config() {
   const config = getConfig();
 
   config.output.path = getPath("v4", config.output.path);
+  config.plugins.push(new CleanWebpackPlugin())
 
   return config;
 }

@@ -2,15 +2,16 @@
 import b from "./mod-b.js"
 
 function hello(msg) {
+	console.log('hello msg', msg)
 	if (msg) {
 		import(
-			/* webpackChunkName: "chunk-foo-a" */
+			/* webpackChunkName: "chunk-foo" */
 			"./foo.js").then((mod) => {
 			console.log("foo is ", mod)
 		})
 
 		import(
-			/* webpackChunkName: "chunk-foo-a" */
+			/* webpackChunkName: "chunk-a" */
 			'./mod-a.js').then(mod => {
 			mod.y()
 		})
