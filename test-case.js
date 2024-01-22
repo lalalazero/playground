@@ -1,18 +1,20 @@
 const path = require("path");
 const fs = require("fs");
-const { webpack_4_0, webpack4, webpack5, plugins } = require("../index");
+const { webpack_4_0, webpack4, webpack5, plugins } = require("./index");
 const LogRuntimeHooksOrderPlugin = require("log-runtime-hooks-order-webpack-plugin");
 
 const { CleanWebpackPlugin } = plugins;
 
-const cwd = process.cwd();
+const TARGET_CASE = '01-one-entry'
+
+const cwd = path.join(process.cwd(), TARGET_CASE)
 
 function getPath(webpackVersion, dist) {
   return path.join(cwd, webpackVersion, dist);
 }
 
 function getWebpack40Config() {
-  const config = getConfig();
+  const config = commonWebpackConfig();
 
   config.output.path = getPath("v4-0", config.output.path);
   config.plugins.push(new CleanWebpackPlugin());
@@ -21,7 +23,7 @@ function getWebpack40Config() {
 }
 
 function getWebpack4Config() {
-  const config = getConfig();
+  const config = commonWebpackConfig();
 
   config.output.path = getPath("v4", config.output.path);
   config.plugins.push(new CleanWebpackPlugin());
@@ -30,7 +32,7 @@ function getWebpack4Config() {
 }
 
 function getWebpack5Config() {
-  const config = getConfig();
+  const config = commonWebpackConfig();
 
   config.output.path = getPath("v5", config.output.path);
   config.output.clean = true;
@@ -38,7 +40,7 @@ function getWebpack5Config() {
   return config;
 }
 
-function getConfig() {
+function commonWebpackConfig() {
   const config = {
     mode: "development",
     entry: {
