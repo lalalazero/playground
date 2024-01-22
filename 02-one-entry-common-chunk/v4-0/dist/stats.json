@@ -1,0 +1,1885 @@
+{
+  "errors": [
+    "Entry module not found: Error: Can't resolve './src/home.js' in 'E:\\playground\\01-one-entry'\nresolve './src/home.js' in 'E:\\playground\\01-one-entry'\n  using description file: E:\\playground\\01-one-entry\\package.json (relative path: .)\n    Field 'browser' doesn't contain a valid alias configuration\n    using description file: E:\\playground\\01-one-entry\\package.json (relative path: ./src/home.js)\n      no extension\n        Field 'browser' doesn't contain a valid alias configuration\n        E:\\playground\\01-one-entry\\src\\home.js doesn't exist\n      .wasm\n        Field 'browser' doesn't contain a valid alias configuration\n        E:\\playground\\01-one-entry\\src\\home.js.wasm doesn't exist\n      .mjs\n        Field 'browser' doesn't contain a valid alias configuration\n        E:\\playground\\01-one-entry\\src\\home.js.mjs doesn't exist\n      .js\n        Field 'browser' doesn't contain a valid alias configuration\n        E:\\playground\\01-one-entry\\src\\home.js.js doesn't exist\n      .json\n        Field 'browser' doesn't contain a valid alias configuration\n        E:\\playground\\01-one-entry\\src\\home.js.json doesn't exist\n      as directory\n        E:\\playground\\01-one-entry\\src\\home.js doesn't exist"
+  ],
+  "warnings": [],
+  "version": "4.0.0-alpha.0",
+  "hash": "738632c85649c43afa0c",
+  "time": 75,
+  "publicPath": "",
+  "assetsByChunkName": {
+    "entry": "entry.js"
+  },
+  "assets": [
+    {
+      "name": "entry.js",
+      "size": 4115,
+      "chunks": [
+        "entry"
+      ],
+      "chunkNames": [
+        "entry"
+      ],
+      "emitted": true
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "entry": {
+      "chunks": [
+        "entry"
+      ],
+      "assets": [
+        "entry.js"
+      ]
+    }
+  },
+  "chunks": [
+    {
+      "id": "entry",
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "extraAsync": false,
+      "size": 255,
+      "names": [
+        "entry"
+      ],
+      "files": [
+        "entry.js"
+      ],
+      "hash": "b8bf1e444701484fa0f3",
+      "parents": [],
+      "modules": [
+        {
+          "id": "./src/a.js",
+          "identifier": "E:\\playground\\01-one-entry\\src\\a.js",
+          "name": "./src/a.js",
+          "index": 1,
+          "index2": 0,
+          "size": 26,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "entry"
+          ],
+          "assets": [],
+          "issuer": "E:\\playground\\01-one-entry\\src\\entry.js",
+          "issuerId": "./src/entry.js",
+          "issuerName": "./src/entry.js",
+          "issuerPath": [
+            {
+              "id": "./src/entry.js",
+              "identifier": "E:\\playground\\01-one-entry\\src\\entry.js",
+              "name": "./src/entry.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": "./src/entry.js",
+              "moduleIdentifier": "E:\\playground\\01-one-entry\\src\\entry.js",
+              "module": "./src/entry.js",
+              "moduleName": "./src/entry.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./a.js",
+              "loc": "1:0-32"
+            },
+            {
+              "moduleId": "./src/entry.js",
+              "moduleIdentifier": "E:\\playground\\01-one-entry\\src\\entry.js",
+              "module": "./src/entry.js",
+              "moduleName": "./src/entry.js",
+              "type": "harmony import specifier",
+              "userRequest": "./a.js",
+              "loc": "6:25-26"
+            }
+          ],
+          "usedExports": false,
+          "providedExports": [
+            "mod"
+          ],
+          "optimizationBailout": [],
+          "depth": 1,
+          "source": "export const mod = 'mod-a'"
+        },
+        {
+          "id": "./src/b.js",
+          "identifier": "E:\\playground\\01-one-entry\\src\\b.js",
+          "name": "./src/b.js",
+          "index": 2,
+          "index2": 1,
+          "size": 26,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "entry"
+          ],
+          "assets": [],
+          "issuer": "E:\\playground\\01-one-entry\\src\\entry.js",
+          "issuerId": "./src/entry.js",
+          "issuerName": "./src/entry.js",
+          "issuerPath": [
+            {
+              "id": "./src/entry.js",
+              "identifier": "E:\\playground\\01-one-entry\\src\\entry.js",
+              "name": "./src/entry.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": "./src/entry.js",
+              "moduleIdentifier": "E:\\playground\\01-one-entry\\src\\entry.js",
+              "module": "./src/entry.js",
+              "moduleName": "./src/entry.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./b.js",
+              "loc": "2:0-33"
+            },
+            {
+              "moduleId": "./src/entry.js",
+              "moduleIdentifier": "E:\\playground\\01-one-entry\\src\\entry.js",
+              "module": "./src/entry.js",
+              "moduleName": "./src/entry.js",
+              "type": "harmony import specifier",
+              "userRequest": "./b.js",
+              "loc": "7:25-26"
+            }
+          ],
+          "usedExports": false,
+          "providedExports": [
+            "mod"
+          ],
+          "optimizationBailout": [],
+          "depth": 1,
+          "source": "export const mod = 'mod-b'"
+        },
+        {
+          "id": "./src/entry.js",
+          "identifier": "E:\\playground\\01-one-entry\\src\\entry.js",
+          "name": "./src/entry.js",
+          "index": 0,
+          "index2": 2,
+          "size": 203,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "entry"
+          ],
+          "assets": [],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "./src/entry.js",
+              "loc": "entry"
+            }
+          ],
+          "usedExports": false,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": 0,
+          "source": "import { mod as a }from \"./a.js\"\r\nimport { mod as b } from \"./b.js\"\r\n\r\nfunction hello(msg) {\r\n\tconsole.log('hello msg', msg)\r\n\tconsole.log('mod-a = ', a)\r\n\tconsole.log('mod-b = ', b)\r\n}\r\n\r\nhello('111')\r\n"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "moduleId": "./src/entry.js",
+          "module": "E:\\playground\\01-one-entry\\src\\entry.js",
+          "moduleIdentifier": "E:\\playground\\01-one-entry\\src\\entry.js",
+          "moduleName": "./src/entry.js",
+          "loc": "",
+          "name": "entry",
+          "reasons": []
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": "./src/a.js",
+      "identifier": "E:\\playground\\01-one-entry\\src\\a.js",
+      "name": "./src/a.js",
+      "index": 1,
+      "index2": 0,
+      "size": 26,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "entry"
+      ],
+      "assets": [],
+      "issuer": "E:\\playground\\01-one-entry\\src\\entry.js",
+      "issuerId": "./src/entry.js",
+      "issuerName": "./src/entry.js",
+      "issuerPath": [
+        {
+          "id": "./src/entry.js",
+          "identifier": "E:\\playground\\01-one-entry\\src\\entry.js",
+          "name": "./src/entry.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": "./src/entry.js",
+          "moduleIdentifier": "E:\\playground\\01-one-entry\\src\\entry.js",
+          "module": "./src/entry.js",
+          "moduleName": "./src/entry.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "./a.js",
+          "loc": "1:0-32"
+        },
+        {
+          "moduleId": "./src/entry.js",
+          "moduleIdentifier": "E:\\playground\\01-one-entry\\src\\entry.js",
+          "module": "./src/entry.js",
+          "moduleName": "./src/entry.js",
+          "type": "harmony import specifier",
+          "userRequest": "./a.js",
+          "loc": "6:25-26"
+        }
+      ],
+      "usedExports": false,
+      "providedExports": [
+        "mod"
+      ],
+      "optimizationBailout": [],
+      "depth": 1,
+      "source": "export const mod = 'mod-a'"
+    },
+    {
+      "id": "./src/b.js",
+      "identifier": "E:\\playground\\01-one-entry\\src\\b.js",
+      "name": "./src/b.js",
+      "index": 2,
+      "index2": 1,
+      "size": 26,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "entry"
+      ],
+      "assets": [],
+      "issuer": "E:\\playground\\01-one-entry\\src\\entry.js",
+      "issuerId": "./src/entry.js",
+      "issuerName": "./src/entry.js",
+      "issuerPath": [
+        {
+          "id": "./src/entry.js",
+          "identifier": "E:\\playground\\01-one-entry\\src\\entry.js",
+          "name": "./src/entry.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": "./src/entry.js",
+          "moduleIdentifier": "E:\\playground\\01-one-entry\\src\\entry.js",
+          "module": "./src/entry.js",
+          "moduleName": "./src/entry.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "./b.js",
+          "loc": "2:0-33"
+        },
+        {
+          "moduleId": "./src/entry.js",
+          "moduleIdentifier": "E:\\playground\\01-one-entry\\src\\entry.js",
+          "module": "./src/entry.js",
+          "moduleName": "./src/entry.js",
+          "type": "harmony import specifier",
+          "userRequest": "./b.js",
+          "loc": "7:25-26"
+        }
+      ],
+      "usedExports": false,
+      "providedExports": [
+        "mod"
+      ],
+      "optimizationBailout": [],
+      "depth": 1,
+      "source": "export const mod = 'mod-b'"
+    },
+    {
+      "id": "./src/entry.js",
+      "identifier": "E:\\playground\\01-one-entry\\src\\entry.js",
+      "name": "./src/entry.js",
+      "index": 0,
+      "index2": 2,
+      "size": 203,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "entry"
+      ],
+      "assets": [],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": null,
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "type": "single entry",
+          "userRequest": "./src/entry.js",
+          "loc": "entry"
+        }
+      ],
+      "usedExports": false,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": 0,
+      "source": "import { mod as a }from \"./a.js\"\r\nimport { mod as b } from \"./b.js\"\r\n\r\nfunction hello(msg) {\r\n\tconsole.log('hello msg', msg)\r\n\tconsole.log('mod-a = ', a)\r\n\tconsole.log('mod-b = ', b)\r\n}\r\n\r\nhello('111')\r\n"
+    }
+  ],
+  "filteredModules": 0,
+  "children": []
+}{
+  "errors": [
+    "Entry module not found: Error: Can't resolve './src/home.js' in 'E:\\playground\\01-one-entry'\nresolve './src/home.js' in 'E:\\playground\\01-one-entry'\n  using description file: E:\\playground\\01-one-entry\\package.json (relative path: .)\n    Field 'browser' doesn't contain a valid alias configuration\n    using description file: E:\\playground\\01-one-entry\\package.json (relative path: ./src/home.js)\n      no extension\n        Field 'browser' doesn't contain a valid alias configuration\n        E:\\playground\\01-one-entry\\src\\home.js doesn't exist\n      .wasm\n        Field 'browser' doesn't contain a valid alias configuration\n        E:\\playground\\01-one-entry\\src\\home.js.wasm doesn't exist\n      .mjs\n        Field 'browser' doesn't contain a valid alias configuration\n        E:\\playground\\01-one-entry\\src\\home.js.mjs doesn't exist\n      .js\n        Field 'browser' doesn't contain a valid alias configuration\n        E:\\playground\\01-one-entry\\src\\home.js.js doesn't exist\n      .json\n        Field 'browser' doesn't contain a valid alias configuration\n        E:\\playground\\01-one-entry\\src\\home.js.json doesn't exist\n      as directory\n        E:\\playground\\01-one-entry\\src\\home.js doesn't exist"
+  ],
+  "warnings": [],
+  "version": "4.0.0-alpha.0",
+  "hash": "738632c85649c43afa0c",
+  "time": 74,
+  "publicPath": "",
+  "assetsByChunkName": {
+    "entry": "entry.js"
+  },
+  "assets": [
+    {
+      "name": "entry.js",
+      "size": 4115,
+      "chunks": [
+        "entry"
+      ],
+      "chunkNames": [
+        "entry"
+      ],
+      "emitted": true
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "entry": {
+      "chunks": [
+        "entry"
+      ],
+      "assets": [
+        "entry.js"
+      ]
+    }
+  },
+  "chunks": [
+    {
+      "id": "entry",
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "extraAsync": false,
+      "size": 255,
+      "names": [
+        "entry"
+      ],
+      "files": [
+        "entry.js"
+      ],
+      "hash": "b8bf1e444701484fa0f3",
+      "parents": [],
+      "modules": [
+        {
+          "id": "./src/a.js",
+          "identifier": "E:\\playground\\01-one-entry\\src\\a.js",
+          "name": "./src/a.js",
+          "index": 1,
+          "index2": 0,
+          "size": 26,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "entry"
+          ],
+          "assets": [],
+          "issuer": "E:\\playground\\01-one-entry\\src\\entry.js",
+          "issuerId": "./src/entry.js",
+          "issuerName": "./src/entry.js",
+          "issuerPath": [
+            {
+              "id": "./src/entry.js",
+              "identifier": "E:\\playground\\01-one-entry\\src\\entry.js",
+              "name": "./src/entry.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": "./src/entry.js",
+              "moduleIdentifier": "E:\\playground\\01-one-entry\\src\\entry.js",
+              "module": "./src/entry.js",
+              "moduleName": "./src/entry.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./a.js",
+              "loc": "1:0-32"
+            },
+            {
+              "moduleId": "./src/entry.js",
+              "moduleIdentifier": "E:\\playground\\01-one-entry\\src\\entry.js",
+              "module": "./src/entry.js",
+              "moduleName": "./src/entry.js",
+              "type": "harmony import specifier",
+              "userRequest": "./a.js",
+              "loc": "6:25-26"
+            }
+          ],
+          "usedExports": false,
+          "providedExports": [
+            "mod"
+          ],
+          "optimizationBailout": [],
+          "depth": 1,
+          "source": "export const mod = 'mod-a'"
+        },
+        {
+          "id": "./src/b.js",
+          "identifier": "E:\\playground\\01-one-entry\\src\\b.js",
+          "name": "./src/b.js",
+          "index": 2,
+          "index2": 1,
+          "size": 26,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "entry"
+          ],
+          "assets": [],
+          "issuer": "E:\\playground\\01-one-entry\\src\\entry.js",
+          "issuerId": "./src/entry.js",
+          "issuerName": "./src/entry.js",
+          "issuerPath": [
+            {
+              "id": "./src/entry.js",
+              "identifier": "E:\\playground\\01-one-entry\\src\\entry.js",
+              "name": "./src/entry.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": "./src/entry.js",
+              "moduleIdentifier": "E:\\playground\\01-one-entry\\src\\entry.js",
+              "module": "./src/entry.js",
+              "moduleName": "./src/entry.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./b.js",
+              "loc": "2:0-33"
+            },
+            {
+              "moduleId": "./src/entry.js",
+              "moduleIdentifier": "E:\\playground\\01-one-entry\\src\\entry.js",
+              "module": "./src/entry.js",
+              "moduleName": "./src/entry.js",
+              "type": "harmony import specifier",
+              "userRequest": "./b.js",
+              "loc": "7:25-26"
+            }
+          ],
+          "usedExports": false,
+          "providedExports": [
+            "mod"
+          ],
+          "optimizationBailout": [],
+          "depth": 1,
+          "source": "export const mod = 'mod-b'"
+        },
+        {
+          "id": "./src/entry.js",
+          "identifier": "E:\\playground\\01-one-entry\\src\\entry.js",
+          "name": "./src/entry.js",
+          "index": 0,
+          "index2": 2,
+          "size": 203,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "entry"
+          ],
+          "assets": [],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "./src/entry.js",
+              "loc": "entry"
+            }
+          ],
+          "usedExports": false,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": 0,
+          "source": "import { mod as a }from \"./a.js\"\r\nimport { mod as b } from \"./b.js\"\r\n\r\nfunction hello(msg) {\r\n\tconsole.log('hello msg', msg)\r\n\tconsole.log('mod-a = ', a)\r\n\tconsole.log('mod-b = ', b)\r\n}\r\n\r\nhello('111')\r\n"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "moduleId": "./src/entry.js",
+          "module": "E:\\playground\\01-one-entry\\src\\entry.js",
+          "moduleIdentifier": "E:\\playground\\01-one-entry\\src\\entry.js",
+          "moduleName": "./src/entry.js",
+          "loc": "",
+          "name": "entry",
+          "reasons": []
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": "./src/a.js",
+      "identifier": "E:\\playground\\01-one-entry\\src\\a.js",
+      "name": "./src/a.js",
+      "index": 1,
+      "index2": 0,
+      "size": 26,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "entry"
+      ],
+      "assets": [],
+      "issuer": "E:\\playground\\01-one-entry\\src\\entry.js",
+      "issuerId": "./src/entry.js",
+      "issuerName": "./src/entry.js",
+      "issuerPath": [
+        {
+          "id": "./src/entry.js",
+          "identifier": "E:\\playground\\01-one-entry\\src\\entry.js",
+          "name": "./src/entry.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": "./src/entry.js",
+          "moduleIdentifier": "E:\\playground\\01-one-entry\\src\\entry.js",
+          "module": "./src/entry.js",
+          "moduleName": "./src/entry.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "./a.js",
+          "loc": "1:0-32"
+        },
+        {
+          "moduleId": "./src/entry.js",
+          "moduleIdentifier": "E:\\playground\\01-one-entry\\src\\entry.js",
+          "module": "./src/entry.js",
+          "moduleName": "./src/entry.js",
+          "type": "harmony import specifier",
+          "userRequest": "./a.js",
+          "loc": "6:25-26"
+        }
+      ],
+      "usedExports": false,
+      "providedExports": [
+        "mod"
+      ],
+      "optimizationBailout": [],
+      "depth": 1,
+      "source": "export const mod = 'mod-a'"
+    },
+    {
+      "id": "./src/b.js",
+      "identifier": "E:\\playground\\01-one-entry\\src\\b.js",
+      "name": "./src/b.js",
+      "index": 2,
+      "index2": 1,
+      "size": 26,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "entry"
+      ],
+      "assets": [],
+      "issuer": "E:\\playground\\01-one-entry\\src\\entry.js",
+      "issuerId": "./src/entry.js",
+      "issuerName": "./src/entry.js",
+      "issuerPath": [
+        {
+          "id": "./src/entry.js",
+          "identifier": "E:\\playground\\01-one-entry\\src\\entry.js",
+          "name": "./src/entry.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": "./src/entry.js",
+          "moduleIdentifier": "E:\\playground\\01-one-entry\\src\\entry.js",
+          "module": "./src/entry.js",
+          "moduleName": "./src/entry.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "./b.js",
+          "loc": "2:0-33"
+        },
+        {
+          "moduleId": "./src/entry.js",
+          "moduleIdentifier": "E:\\playground\\01-one-entry\\src\\entry.js",
+          "module": "./src/entry.js",
+          "moduleName": "./src/entry.js",
+          "type": "harmony import specifier",
+          "userRequest": "./b.js",
+          "loc": "7:25-26"
+        }
+      ],
+      "usedExports": false,
+      "providedExports": [
+        "mod"
+      ],
+      "optimizationBailout": [],
+      "depth": 1,
+      "source": "export const mod = 'mod-b'"
+    },
+    {
+      "id": "./src/entry.js",
+      "identifier": "E:\\playground\\01-one-entry\\src\\entry.js",
+      "name": "./src/entry.js",
+      "index": 0,
+      "index2": 2,
+      "size": 203,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "entry"
+      ],
+      "assets": [],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": null,
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "type": "single entry",
+          "userRequest": "./src/entry.js",
+          "loc": "entry"
+        }
+      ],
+      "usedExports": false,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": 0,
+      "source": "import { mod as a }from \"./a.js\"\r\nimport { mod as b } from \"./b.js\"\r\n\r\nfunction hello(msg) {\r\n\tconsole.log('hello msg', msg)\r\n\tconsole.log('mod-a = ', a)\r\n\tconsole.log('mod-b = ', b)\r\n}\r\n\r\nhello('111')\r\n"
+    }
+  ],
+  "filteredModules": 0,
+  "children": []
+}{
+  "errors": [
+    "Entry module not found: Error: Can't resolve './src/home.js' in 'E:\\playground\\02-one-entry-common-chunk'\nresolve './src/home.js' in 'E:\\playground\\02-one-entry-common-chunk'\n  using description file: E:\\playground\\02-one-entry-common-chunk\\package.json (relative path: .)\n    Field 'browser' doesn't contain a valid alias configuration\n    using description file: E:\\playground\\02-one-entry-common-chunk\\package.json (relative path: ./src/home.js)\n      no extension\n        Field 'browser' doesn't contain a valid alias configuration\n        E:\\playground\\02-one-entry-common-chunk\\src\\home.js doesn't exist\n      .wasm\n        Field 'browser' doesn't contain a valid alias configuration\n        E:\\playground\\02-one-entry-common-chunk\\src\\home.js.wasm doesn't exist\n      .mjs\n        Field 'browser' doesn't contain a valid alias configuration\n        E:\\playground\\02-one-entry-common-chunk\\src\\home.js.mjs doesn't exist\n      .js\n        Field 'browser' doesn't contain a valid alias configuration\n        E:\\playground\\02-one-entry-common-chunk\\src\\home.js.js doesn't exist\n      .json\n        Field 'browser' doesn't contain a valid alias configuration\n        E:\\playground\\02-one-entry-common-chunk\\src\\home.js.json doesn't exist\n      as directory\n        E:\\playground\\02-one-entry-common-chunk\\src\\home.js doesn't exist"
+  ],
+  "warnings": [],
+  "version": "4.0.0-alpha.0",
+  "hash": "01ebbd478222d34276d1",
+  "time": 104,
+  "publicPath": "",
+  "assetsByChunkName": {
+    "entry": "entry.js",
+    "share": "share-chunk.js"
+  },
+  "assets": [
+    {
+      "name": "entry.js",
+      "size": 1961,
+      "chunks": [
+        "entry"
+      ],
+      "chunkNames": [
+        "entry"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "share-chunk.js",
+      "size": 7578,
+      "chunks": [
+        "share"
+      ],
+      "chunkNames": [
+        "share"
+      ],
+      "emitted": true
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "entry": {
+      "chunks": [
+        "share",
+        "entry"
+      ],
+      "assets": [
+        "share-chunk.js",
+        "entry.js"
+      ]
+    }
+  },
+  "chunks": [
+    {
+      "id": "entry",
+      "rendered": true,
+      "initial": true,
+      "entry": false,
+      "extraAsync": false,
+      "size": 339,
+      "names": [
+        "entry"
+      ],
+      "files": [
+        "entry.js"
+      ],
+      "hash": "e1da1f8222c31b69ef81",
+      "parents": [
+        "share"
+      ],
+      "modules": [
+        {
+          "id": "./src/a.js",
+          "identifier": "E:\\playground\\02-one-entry-common-chunk\\src\\a.js",
+          "name": "./src/a.js",
+          "index": 1,
+          "index2": 1,
+          "size": 68,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "entry"
+          ],
+          "assets": [],
+          "issuer": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+          "issuerId": "./src/entry.js",
+          "issuerName": "./src/entry.js",
+          "issuerPath": [
+            {
+              "id": "./src/entry.js",
+              "identifier": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+              "name": "./src/entry.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": "./src/entry.js",
+              "moduleIdentifier": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+              "module": "./src/entry.js",
+              "moduleName": "./src/entry.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./a.js",
+              "loc": "1:0-32"
+            },
+            {
+              "moduleId": "./src/entry.js",
+              "moduleIdentifier": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+              "module": "./src/entry.js",
+              "moduleName": "./src/entry.js",
+              "type": "harmony import specifier",
+              "userRequest": "./a.js",
+              "loc": "6:25-26"
+            }
+          ],
+          "usedExports": false,
+          "providedExports": [
+            "mod"
+          ],
+          "optimizationBailout": [],
+          "depth": 1,
+          "source": "import share from './share.js'\r\n\r\nexport const mod = 'mod-a' + share"
+        },
+        {
+          "id": "./src/b.js",
+          "identifier": "E:\\playground\\02-one-entry-common-chunk\\src\\b.js",
+          "name": "./src/b.js",
+          "index": 3,
+          "index2": 2,
+          "size": 68,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "entry"
+          ],
+          "assets": [],
+          "issuer": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+          "issuerId": "./src/entry.js",
+          "issuerName": "./src/entry.js",
+          "issuerPath": [
+            {
+              "id": "./src/entry.js",
+              "identifier": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+              "name": "./src/entry.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": "./src/entry.js",
+              "moduleIdentifier": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+              "module": "./src/entry.js",
+              "moduleName": "./src/entry.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./b.js",
+              "loc": "2:0-33"
+            },
+            {
+              "moduleId": "./src/entry.js",
+              "moduleIdentifier": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+              "module": "./src/entry.js",
+              "moduleName": "./src/entry.js",
+              "type": "harmony import specifier",
+              "userRequest": "./b.js",
+              "loc": "7:25-26"
+            }
+          ],
+          "usedExports": false,
+          "providedExports": [
+            "mod"
+          ],
+          "optimizationBailout": [],
+          "depth": 1,
+          "source": "import share from './share.js'\r\n\r\nexport const mod = 'mod-b' + share"
+        },
+        {
+          "id": "./src/entry.js",
+          "identifier": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+          "name": "./src/entry.js",
+          "index": 0,
+          "index2": 3,
+          "size": 203,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "entry"
+          ],
+          "assets": [],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "./src/entry.js",
+              "loc": "entry"
+            }
+          ],
+          "usedExports": false,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": 0,
+          "source": "import { mod as a }from \"./a.js\"\r\nimport { mod as b } from \"./b.js\"\r\n\r\nfunction hello(msg) {\r\n\tconsole.log('hello msg', msg)\r\n\tconsole.log('mod-a = ', a)\r\n\tconsole.log('mod-b = ', b)\r\n}\r\n\r\nhello('111')\r\n"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "moduleId": "./src/entry.js",
+          "module": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+          "moduleIdentifier": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+          "moduleName": "./src/entry.js",
+          "loc": "",
+          "name": "entry",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "id": "share",
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "extraAsync": false,
+      "size": 30,
+      "names": [
+        "share"
+      ],
+      "files": [
+        "share-chunk.js"
+      ],
+      "hash": "90555a19176e89ede0f8",
+      "parents": [],
+      "modules": [
+        {
+          "id": "./src/share.js",
+          "identifier": "E:\\playground\\02-one-entry-common-chunk\\src\\share.js",
+          "name": "./src/share.js",
+          "index": 2,
+          "index2": 0,
+          "size": 30,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "share"
+          ],
+          "assets": [],
+          "issuer": "E:\\playground\\02-one-entry-common-chunk\\src\\b.js",
+          "issuerId": "./src/b.js",
+          "issuerName": "./src/b.js",
+          "issuerPath": [
+            {
+              "id": "./src/entry.js",
+              "identifier": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+              "name": "./src/entry.js"
+            },
+            {
+              "id": "./src/b.js",
+              "identifier": "E:\\playground\\02-one-entry-common-chunk\\src\\b.js",
+              "name": "./src/b.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": "./src/b.js",
+              "moduleIdentifier": "E:\\playground\\02-one-entry-common-chunk\\src\\b.js",
+              "module": "./src/b.js",
+              "moduleName": "./src/b.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./share.js",
+              "loc": "1:0-30"
+            },
+            {
+              "moduleId": "./src/b.js",
+              "moduleIdentifier": "E:\\playground\\02-one-entry-common-chunk\\src\\b.js",
+              "module": "./src/b.js",
+              "moduleName": "./src/b.js",
+              "type": "harmony import specifier",
+              "userRequest": "./share.js",
+              "loc": "3:29-34"
+            },
+            {
+              "moduleId": "./src/a.js",
+              "moduleIdentifier": "E:\\playground\\02-one-entry-common-chunk\\src\\a.js",
+              "module": "./src/a.js",
+              "moduleName": "./src/a.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./share.js",
+              "loc": "1:0-30"
+            },
+            {
+              "moduleId": "./src/a.js",
+              "moduleIdentifier": "E:\\playground\\02-one-entry-common-chunk\\src\\a.js",
+              "module": "./src/a.js",
+              "moduleName": "./src/a.js",
+              "type": "harmony import specifier",
+              "userRequest": "./share.js",
+              "loc": "3:29-34"
+            }
+          ],
+          "usedExports": false,
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 2,
+          "source": "\r\n\r\nexport default 'share-mod'"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": []
+    }
+  ],
+  "modules": [
+    {
+      "id": "./src/a.js",
+      "identifier": "E:\\playground\\02-one-entry-common-chunk\\src\\a.js",
+      "name": "./src/a.js",
+      "index": 1,
+      "index2": 1,
+      "size": 68,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "entry"
+      ],
+      "assets": [],
+      "issuer": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+      "issuerId": "./src/entry.js",
+      "issuerName": "./src/entry.js",
+      "issuerPath": [
+        {
+          "id": "./src/entry.js",
+          "identifier": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+          "name": "./src/entry.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": "./src/entry.js",
+          "moduleIdentifier": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+          "module": "./src/entry.js",
+          "moduleName": "./src/entry.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "./a.js",
+          "loc": "1:0-32"
+        },
+        {
+          "moduleId": "./src/entry.js",
+          "moduleIdentifier": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+          "module": "./src/entry.js",
+          "moduleName": "./src/entry.js",
+          "type": "harmony import specifier",
+          "userRequest": "./a.js",
+          "loc": "6:25-26"
+        }
+      ],
+      "usedExports": false,
+      "providedExports": [
+        "mod"
+      ],
+      "optimizationBailout": [],
+      "depth": 1,
+      "source": "import share from './share.js'\r\n\r\nexport const mod = 'mod-a' + share"
+    },
+    {
+      "id": "./src/b.js",
+      "identifier": "E:\\playground\\02-one-entry-common-chunk\\src\\b.js",
+      "name": "./src/b.js",
+      "index": 3,
+      "index2": 2,
+      "size": 68,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "entry"
+      ],
+      "assets": [],
+      "issuer": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+      "issuerId": "./src/entry.js",
+      "issuerName": "./src/entry.js",
+      "issuerPath": [
+        {
+          "id": "./src/entry.js",
+          "identifier": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+          "name": "./src/entry.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": "./src/entry.js",
+          "moduleIdentifier": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+          "module": "./src/entry.js",
+          "moduleName": "./src/entry.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "./b.js",
+          "loc": "2:0-33"
+        },
+        {
+          "moduleId": "./src/entry.js",
+          "moduleIdentifier": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+          "module": "./src/entry.js",
+          "moduleName": "./src/entry.js",
+          "type": "harmony import specifier",
+          "userRequest": "./b.js",
+          "loc": "7:25-26"
+        }
+      ],
+      "usedExports": false,
+      "providedExports": [
+        "mod"
+      ],
+      "optimizationBailout": [],
+      "depth": 1,
+      "source": "import share from './share.js'\r\n\r\nexport const mod = 'mod-b' + share"
+    },
+    {
+      "id": "./src/entry.js",
+      "identifier": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+      "name": "./src/entry.js",
+      "index": 0,
+      "index2": 3,
+      "size": 203,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "entry"
+      ],
+      "assets": [],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": null,
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "type": "single entry",
+          "userRequest": "./src/entry.js",
+          "loc": "entry"
+        }
+      ],
+      "usedExports": false,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": 0,
+      "source": "import { mod as a }from \"./a.js\"\r\nimport { mod as b } from \"./b.js\"\r\n\r\nfunction hello(msg) {\r\n\tconsole.log('hello msg', msg)\r\n\tconsole.log('mod-a = ', a)\r\n\tconsole.log('mod-b = ', b)\r\n}\r\n\r\nhello('111')\r\n"
+    },
+    {
+      "id": "./src/share.js",
+      "identifier": "E:\\playground\\02-one-entry-common-chunk\\src\\share.js",
+      "name": "./src/share.js",
+      "index": 2,
+      "index2": 0,
+      "size": 30,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "share"
+      ],
+      "assets": [],
+      "issuer": "E:\\playground\\02-one-entry-common-chunk\\src\\b.js",
+      "issuerId": "./src/b.js",
+      "issuerName": "./src/b.js",
+      "issuerPath": [
+        {
+          "id": "./src/entry.js",
+          "identifier": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+          "name": "./src/entry.js"
+        },
+        {
+          "id": "./src/b.js",
+          "identifier": "E:\\playground\\02-one-entry-common-chunk\\src\\b.js",
+          "name": "./src/b.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": "./src/b.js",
+          "moduleIdentifier": "E:\\playground\\02-one-entry-common-chunk\\src\\b.js",
+          "module": "./src/b.js",
+          "moduleName": "./src/b.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "./share.js",
+          "loc": "1:0-30"
+        },
+        {
+          "moduleId": "./src/b.js",
+          "moduleIdentifier": "E:\\playground\\02-one-entry-common-chunk\\src\\b.js",
+          "module": "./src/b.js",
+          "moduleName": "./src/b.js",
+          "type": "harmony import specifier",
+          "userRequest": "./share.js",
+          "loc": "3:29-34"
+        },
+        {
+          "moduleId": "./src/a.js",
+          "moduleIdentifier": "E:\\playground\\02-one-entry-common-chunk\\src\\a.js",
+          "module": "./src/a.js",
+          "moduleName": "./src/a.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "./share.js",
+          "loc": "1:0-30"
+        },
+        {
+          "moduleId": "./src/a.js",
+          "moduleIdentifier": "E:\\playground\\02-one-entry-common-chunk\\src\\a.js",
+          "module": "./src/a.js",
+          "moduleName": "./src/a.js",
+          "type": "harmony import specifier",
+          "userRequest": "./share.js",
+          "loc": "3:29-34"
+        }
+      ],
+      "usedExports": false,
+      "providedExports": [
+        "default"
+      ],
+      "optimizationBailout": [],
+      "depth": 2,
+      "source": "\r\n\r\nexport default 'share-mod'"
+    }
+  ],
+  "filteredModules": 0,
+  "children": []
+}{
+  "errors": [
+    "Entry module not found: Error: Can't resolve './src/home.js' in 'E:\\playground\\02-one-entry-common-chunk'\nresolve './src/home.js' in 'E:\\playground\\02-one-entry-common-chunk'\n  using description file: E:\\playground\\02-one-entry-common-chunk\\package.json (relative path: .)\n    Field 'browser' doesn't contain a valid alias configuration\n    using description file: E:\\playground\\02-one-entry-common-chunk\\package.json (relative path: ./src/home.js)\n      no extension\n        Field 'browser' doesn't contain a valid alias configuration\n        E:\\playground\\02-one-entry-common-chunk\\src\\home.js doesn't exist\n      .wasm\n        Field 'browser' doesn't contain a valid alias configuration\n        E:\\playground\\02-one-entry-common-chunk\\src\\home.js.wasm doesn't exist\n      .mjs\n        Field 'browser' doesn't contain a valid alias configuration\n        E:\\playground\\02-one-entry-common-chunk\\src\\home.js.mjs doesn't exist\n      .js\n        Field 'browser' doesn't contain a valid alias configuration\n        E:\\playground\\02-one-entry-common-chunk\\src\\home.js.js doesn't exist\n      .json\n        Field 'browser' doesn't contain a valid alias configuration\n        E:\\playground\\02-one-entry-common-chunk\\src\\home.js.json doesn't exist\n      as directory\n        E:\\playground\\02-one-entry-common-chunk\\src\\home.js doesn't exist"
+  ],
+  "warnings": [],
+  "version": "4.0.0-alpha.0",
+  "hash": "01ebbd478222d34276d1",
+  "time": 77,
+  "publicPath": "",
+  "assetsByChunkName": {
+    "entry": "entry.js",
+    "share": "share-chunk.js"
+  },
+  "assets": [
+    {
+      "name": "entry.js",
+      "size": 1961,
+      "chunks": [
+        "entry"
+      ],
+      "chunkNames": [
+        "entry"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "share-chunk.js",
+      "size": 7578,
+      "chunks": [
+        "share"
+      ],
+      "chunkNames": [
+        "share"
+      ],
+      "emitted": true
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "entry": {
+      "chunks": [
+        "share",
+        "entry"
+      ],
+      "assets": [
+        "share-chunk.js",
+        "entry.js"
+      ]
+    }
+  },
+  "chunks": [
+    {
+      "id": "entry",
+      "rendered": true,
+      "initial": true,
+      "entry": false,
+      "extraAsync": false,
+      "size": 339,
+      "names": [
+        "entry"
+      ],
+      "files": [
+        "entry.js"
+      ],
+      "hash": "e1da1f8222c31b69ef81",
+      "parents": [
+        "share"
+      ],
+      "modules": [
+        {
+          "id": "./src/a.js",
+          "identifier": "E:\\playground\\02-one-entry-common-chunk\\src\\a.js",
+          "name": "./src/a.js",
+          "index": 1,
+          "index2": 1,
+          "size": 68,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "entry"
+          ],
+          "assets": [],
+          "issuer": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+          "issuerId": "./src/entry.js",
+          "issuerName": "./src/entry.js",
+          "issuerPath": [
+            {
+              "id": "./src/entry.js",
+              "identifier": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+              "name": "./src/entry.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": "./src/entry.js",
+              "moduleIdentifier": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+              "module": "./src/entry.js",
+              "moduleName": "./src/entry.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./a.js",
+              "loc": "1:0-32"
+            },
+            {
+              "moduleId": "./src/entry.js",
+              "moduleIdentifier": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+              "module": "./src/entry.js",
+              "moduleName": "./src/entry.js",
+              "type": "harmony import specifier",
+              "userRequest": "./a.js",
+              "loc": "6:25-26"
+            }
+          ],
+          "usedExports": false,
+          "providedExports": [
+            "mod"
+          ],
+          "optimizationBailout": [],
+          "depth": 1,
+          "source": "import share from './share.js'\r\n\r\nexport const mod = 'mod-a' + share"
+        },
+        {
+          "id": "./src/b.js",
+          "identifier": "E:\\playground\\02-one-entry-common-chunk\\src\\b.js",
+          "name": "./src/b.js",
+          "index": 3,
+          "index2": 2,
+          "size": 68,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "entry"
+          ],
+          "assets": [],
+          "issuer": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+          "issuerId": "./src/entry.js",
+          "issuerName": "./src/entry.js",
+          "issuerPath": [
+            {
+              "id": "./src/entry.js",
+              "identifier": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+              "name": "./src/entry.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": "./src/entry.js",
+              "moduleIdentifier": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+              "module": "./src/entry.js",
+              "moduleName": "./src/entry.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./b.js",
+              "loc": "2:0-33"
+            },
+            {
+              "moduleId": "./src/entry.js",
+              "moduleIdentifier": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+              "module": "./src/entry.js",
+              "moduleName": "./src/entry.js",
+              "type": "harmony import specifier",
+              "userRequest": "./b.js",
+              "loc": "7:25-26"
+            }
+          ],
+          "usedExports": false,
+          "providedExports": [
+            "mod"
+          ],
+          "optimizationBailout": [],
+          "depth": 1,
+          "source": "import share from './share.js'\r\n\r\nexport const mod = 'mod-b' + share"
+        },
+        {
+          "id": "./src/entry.js",
+          "identifier": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+          "name": "./src/entry.js",
+          "index": 0,
+          "index2": 3,
+          "size": 203,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "entry"
+          ],
+          "assets": [],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "./src/entry.js",
+              "loc": "entry"
+            }
+          ],
+          "usedExports": false,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": 0,
+          "source": "import { mod as a }from \"./a.js\"\r\nimport { mod as b } from \"./b.js\"\r\n\r\nfunction hello(msg) {\r\n\tconsole.log('hello msg', msg)\r\n\tconsole.log('mod-a = ', a)\r\n\tconsole.log('mod-b = ', b)\r\n}\r\n\r\nhello('111')\r\n"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "moduleId": "./src/entry.js",
+          "module": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+          "moduleIdentifier": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+          "moduleName": "./src/entry.js",
+          "loc": "",
+          "name": "entry",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "id": "share",
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "extraAsync": false,
+      "size": 30,
+      "names": [
+        "share"
+      ],
+      "files": [
+        "share-chunk.js"
+      ],
+      "hash": "90555a19176e89ede0f8",
+      "parents": [],
+      "modules": [
+        {
+          "id": "./src/share.js",
+          "identifier": "E:\\playground\\02-one-entry-common-chunk\\src\\share.js",
+          "name": "./src/share.js",
+          "index": 2,
+          "index2": 0,
+          "size": 30,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "share"
+          ],
+          "assets": [],
+          "issuer": "E:\\playground\\02-one-entry-common-chunk\\src\\a.js",
+          "issuerId": "./src/a.js",
+          "issuerName": "./src/a.js",
+          "issuerPath": [
+            {
+              "id": "./src/entry.js",
+              "identifier": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+              "name": "./src/entry.js"
+            },
+            {
+              "id": "./src/a.js",
+              "identifier": "E:\\playground\\02-one-entry-common-chunk\\src\\a.js",
+              "name": "./src/a.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": "./src/a.js",
+              "moduleIdentifier": "E:\\playground\\02-one-entry-common-chunk\\src\\a.js",
+              "module": "./src/a.js",
+              "moduleName": "./src/a.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./share.js",
+              "loc": "1:0-30"
+            },
+            {
+              "moduleId": "./src/a.js",
+              "moduleIdentifier": "E:\\playground\\02-one-entry-common-chunk\\src\\a.js",
+              "module": "./src/a.js",
+              "moduleName": "./src/a.js",
+              "type": "harmony import specifier",
+              "userRequest": "./share.js",
+              "loc": "3:29-34"
+            },
+            {
+              "moduleId": "./src/b.js",
+              "moduleIdentifier": "E:\\playground\\02-one-entry-common-chunk\\src\\b.js",
+              "module": "./src/b.js",
+              "moduleName": "./src/b.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./share.js",
+              "loc": "1:0-30"
+            },
+            {
+              "moduleId": "./src/b.js",
+              "moduleIdentifier": "E:\\playground\\02-one-entry-common-chunk\\src\\b.js",
+              "module": "./src/b.js",
+              "moduleName": "./src/b.js",
+              "type": "harmony import specifier",
+              "userRequest": "./share.js",
+              "loc": "3:29-34"
+            }
+          ],
+          "usedExports": false,
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 2,
+          "source": "\r\n\r\nexport default 'share-mod'"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": []
+    }
+  ],
+  "modules": [
+    {
+      "id": "./src/a.js",
+      "identifier": "E:\\playground\\02-one-entry-common-chunk\\src\\a.js",
+      "name": "./src/a.js",
+      "index": 1,
+      "index2": 1,
+      "size": 68,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "entry"
+      ],
+      "assets": [],
+      "issuer": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+      "issuerId": "./src/entry.js",
+      "issuerName": "./src/entry.js",
+      "issuerPath": [
+        {
+          "id": "./src/entry.js",
+          "identifier": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+          "name": "./src/entry.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": "./src/entry.js",
+          "moduleIdentifier": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+          "module": "./src/entry.js",
+          "moduleName": "./src/entry.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "./a.js",
+          "loc": "1:0-32"
+        },
+        {
+          "moduleId": "./src/entry.js",
+          "moduleIdentifier": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+          "module": "./src/entry.js",
+          "moduleName": "./src/entry.js",
+          "type": "harmony import specifier",
+          "userRequest": "./a.js",
+          "loc": "6:25-26"
+        }
+      ],
+      "usedExports": false,
+      "providedExports": [
+        "mod"
+      ],
+      "optimizationBailout": [],
+      "depth": 1,
+      "source": "import share from './share.js'\r\n\r\nexport const mod = 'mod-a' + share"
+    },
+    {
+      "id": "./src/b.js",
+      "identifier": "E:\\playground\\02-one-entry-common-chunk\\src\\b.js",
+      "name": "./src/b.js",
+      "index": 3,
+      "index2": 2,
+      "size": 68,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "entry"
+      ],
+      "assets": [],
+      "issuer": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+      "issuerId": "./src/entry.js",
+      "issuerName": "./src/entry.js",
+      "issuerPath": [
+        {
+          "id": "./src/entry.js",
+          "identifier": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+          "name": "./src/entry.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": "./src/entry.js",
+          "moduleIdentifier": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+          "module": "./src/entry.js",
+          "moduleName": "./src/entry.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "./b.js",
+          "loc": "2:0-33"
+        },
+        {
+          "moduleId": "./src/entry.js",
+          "moduleIdentifier": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+          "module": "./src/entry.js",
+          "moduleName": "./src/entry.js",
+          "type": "harmony import specifier",
+          "userRequest": "./b.js",
+          "loc": "7:25-26"
+        }
+      ],
+      "usedExports": false,
+      "providedExports": [
+        "mod"
+      ],
+      "optimizationBailout": [],
+      "depth": 1,
+      "source": "import share from './share.js'\r\n\r\nexport const mod = 'mod-b' + share"
+    },
+    {
+      "id": "./src/entry.js",
+      "identifier": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+      "name": "./src/entry.js",
+      "index": 0,
+      "index2": 3,
+      "size": 203,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "entry"
+      ],
+      "assets": [],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": null,
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "type": "single entry",
+          "userRequest": "./src/entry.js",
+          "loc": "entry"
+        }
+      ],
+      "usedExports": false,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": 0,
+      "source": "import { mod as a }from \"./a.js\"\r\nimport { mod as b } from \"./b.js\"\r\n\r\nfunction hello(msg) {\r\n\tconsole.log('hello msg', msg)\r\n\tconsole.log('mod-a = ', a)\r\n\tconsole.log('mod-b = ', b)\r\n}\r\n\r\nhello('111')\r\n"
+    },
+    {
+      "id": "./src/share.js",
+      "identifier": "E:\\playground\\02-one-entry-common-chunk\\src\\share.js",
+      "name": "./src/share.js",
+      "index": 2,
+      "index2": 0,
+      "size": 30,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "share"
+      ],
+      "assets": [],
+      "issuer": "E:\\playground\\02-one-entry-common-chunk\\src\\a.js",
+      "issuerId": "./src/a.js",
+      "issuerName": "./src/a.js",
+      "issuerPath": [
+        {
+          "id": "./src/entry.js",
+          "identifier": "E:\\playground\\02-one-entry-common-chunk\\src\\entry.js",
+          "name": "./src/entry.js"
+        },
+        {
+          "id": "./src/a.js",
+          "identifier": "E:\\playground\\02-one-entry-common-chunk\\src\\a.js",
+          "name": "./src/a.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": "./src/a.js",
+          "moduleIdentifier": "E:\\playground\\02-one-entry-common-chunk\\src\\a.js",
+          "module": "./src/a.js",
+          "moduleName": "./src/a.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "./share.js",
+          "loc": "1:0-30"
+        },
+        {
+          "moduleId": "./src/a.js",
+          "moduleIdentifier": "E:\\playground\\02-one-entry-common-chunk\\src\\a.js",
+          "module": "./src/a.js",
+          "moduleName": "./src/a.js",
+          "type": "harmony import specifier",
+          "userRequest": "./share.js",
+          "loc": "3:29-34"
+        },
+        {
+          "moduleId": "./src/b.js",
+          "moduleIdentifier": "E:\\playground\\02-one-entry-common-chunk\\src\\b.js",
+          "module": "./src/b.js",
+          "moduleName": "./src/b.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "./share.js",
+          "loc": "1:0-30"
+        },
+        {
+          "moduleId": "./src/b.js",
+          "moduleIdentifier": "E:\\playground\\02-one-entry-common-chunk\\src\\b.js",
+          "module": "./src/b.js",
+          "moduleName": "./src/b.js",
+          "type": "harmony import specifier",
+          "userRequest": "./share.js",
+          "loc": "3:29-34"
+        }
+      ],
+      "usedExports": false,
+      "providedExports": [
+        "default"
+      ],
+      "optimizationBailout": [],
+      "depth": 2,
+      "source": "\r\n\r\nexport default 'share-mod'"
+    }
+  ],
+  "filteredModules": 0,
+  "children": []
+}

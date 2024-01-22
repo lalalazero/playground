@@ -5,9 +5,9 @@ const LogRuntimeHooksOrderPlugin = require("log-runtime-hooks-order-webpack-plug
 
 const { CleanWebpackPlugin } = plugins;
 
-const TARGET_CASE = '01-one-entry'
+const TARGET_CASE = "02-one-entry-common-chunk";
 
-const cwd = path.join(process.cwd(), TARGET_CASE)
+const cwd = path.join(process.cwd(), TARGET_CASE);
 
 function getPath(webpackVersion, dist) {
   return path.join(cwd, webpackVersion, dist);
@@ -41,11 +41,17 @@ function getWebpack5Config() {
 }
 
 function commonWebpackConfig() {
+  const defaultConfig = path.join(cwd, "webpack.config.js");
+
+  if (fs.existsSync(defaultConfig)) {
+    return require(defaultConfig);
+  }
+
   const config = {
     mode: "development",
     entry: {
-      'entry': "./src/entry.js",
-      'home': "./src/home.js"
+      entry: "./src/entry.js",
+      home: "./src/home.js",
     },
     context: cwd,
     target: "web",
