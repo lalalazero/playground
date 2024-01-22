@@ -81,9 +81,17 @@ function commonWebpackConfig() {
 
   compiler.run((err, stats) => {
     if (stats && stats.toJson) {
-      let json = stats.toJson();
+      let json = stats.toJson({ 
+        chunks: true,
+        // chunkModules: true,
+        all: false
+      });
       let text = JSON.stringify(json, null, 2);
       let file = path.join(config.output.path, "stats.json");
+
+      if(fs.existsSync(file)) {
+        fs.rmSync(file)
+      }
 
       fs.appendFileSync(file, text, "utf8");
     }

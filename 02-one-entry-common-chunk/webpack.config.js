@@ -6,7 +6,7 @@ module.exports = {
   mode: "development",
   entry: {
     entry: "./src/entry.js",
-    home: "./src/home.js",
+    // home: "./src/home.js",
   },
   context: cwd,
   target: "web",
@@ -14,11 +14,11 @@ module.exports = {
   output: {
     path: "dist",
   },
-  stats: {
-    assets: false,
-    chunks: false,
-    modules: false,
-  },
+//   stats: {
+//     assets: false,
+//     chunks: false,
+//     modules: false,
+//   },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
         name: 'share',
