@@ -29,7 +29,7 @@
 /******/
 /******/ 	// object to store loaded and loading chunks
 /******/ 	var installedChunks = {
-/******/ 		"main": 0
+/******/ 		"home": 0
 /******/ 	};
 /******/
 /******/ 	var scheduledModules = [];
@@ -163,59 +163,27 @@
 /******/ 	for(var i = 0; i < jsonpArray.length; i++) webpackJsonpCallback(jsonpArray[i]);
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/main.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/home.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/main.js":
+/***/ "./src/home.js":
 /*!*********************!*\
-  !*** ./src/main.js ***!
+  !*** ./src/home.js ***!
   \*********************/
-/*! exports provided: hello */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hello", function() { return hello; });
-/* harmony import */ var _mod_b_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mod-b.js */"./src/mod-b.js");
-// import a from "./mod-a.js"
-
-
-function hello(msg) {
-	console.log('hello msg', msg)
-	if (msg) {
-		__webpack_require__.e/* import() */("chunk-foo"/*! chunk-foo *//* duplicate */).then(__webpack_require__.bind(null, /*! ./foo.js */"./src/foo.js")).then((mod) => {
-			console.log("foo is ", mod)
-		})
-
-		__webpack_require__.e/* import() */("chunk-a"/*! chunk-a */).then(__webpack_require__.bind(null, /*! ./mod-a.js */"./src/mod-a.js")).then(mod => {
-			mod.y()
-		})
-	}
-
-	return {
-		a,
-		b: _mod_b_js__WEBPACK_IMPORTED_MODULE_0__["default"],
-	}
+function onLoad() {
+    __webpack_require__.e/* import() */(0/* duplicate */).then(__webpack_require__.bind(null, /*! ./share.js */"./src/share.js")).then(mod => {
+        console.log('home entry, share=', mod.default)
+    })
 }
 
-
-
-
-/***/ }),
-
-/***/ "./src/mod-b.js":
-/*!**********************!*\
-  !*** ./src/mod-b.js ***!
-  \**********************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ('mod-b');
-
+if(window) {
+    window.onload = onLoad
+}
 
 /***/ })
 

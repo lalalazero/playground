@@ -41,7 +41,10 @@ function getWebpack5Config() {
 function getConfig() {
   const config = {
     mode: "development",
-    entry: "./src/main.js",
+    entry: {
+      'entry': "./src/entry.js",
+      'home': "./src/home.js"
+    },
     context: cwd,
     target: "web",
     devtool: false,
@@ -63,8 +66,8 @@ function getConfig() {
 
 [
   { value: webpack_4_0, version: "v4.0", config: getWebpack40Config() },
-  { value: webpack4, version: "v4", config: getWebpack4Config() },
-  { value: webpack5, version: "v5", config: getWebpack5Config() },
+  // { value: webpack4, version: "v4", config: getWebpack4Config() },
+  // { value: webpack5, version: "v5", config: getWebpack5Config() },
 ].forEach(({ version, value: webpack, config }) => {
   const compiler = webpack(config);
 

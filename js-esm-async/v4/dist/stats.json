@@ -1,50 +1,50 @@
 {
   "errors": [],
-  "warnings": [],
+  "warnings": [
+    "./src/entry.js 7:2-3\n\"export 'default' (imported as 'a') was not found in './a.js'\n    at HarmonyImportSpecifierDependency._getErrors (E:\\webpack-4-latest\\lib\\dependencies\\HarmonyImportSpecifierDependency.js:109:11)\n    at HarmonyImportSpecifierDependency.getWarnings (E:\\webpack-4-latest\\lib\\dependencies\\HarmonyImportSpecifierDependency.js:60:15)\n    at Compilation.reportDependencyErrorsAndWarnings (E:\\webpack-4-latest\\lib\\Compilation.js:1454:24)\n    at E:\\webpack-4-latest\\lib\\Compilation.js:1258:10\n    at AsyncSeriesHook.eval [as callAsync] (eval at create (E:\\webpack-4-latest\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at AsyncSeriesHook.lazyCompileHook (E:\\webpack-4-latest\\node_modules\\tapable\\lib\\Hook.js:154:20)\n    at Compilation.finish (E:\\webpack-4-latest\\lib\\Compilation.js:1253:28)\n    at E:\\webpack-4-latest\\lib\\Compiler.js:672:17\n    at _done (eval at create (E:\\webpack-4-latest\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:9:1)\n    at eval (eval at create (E:\\webpack-4-latest\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:32:22)",
+    "./src/entry.js 8:2-3\n\"export 'default' (imported as 'b') was not found in './b.js'\n    at HarmonyImportSpecifierDependency._getErrors (E:\\webpack-4-latest\\lib\\dependencies\\HarmonyImportSpecifierDependency.js:109:11)\n    at HarmonyImportSpecifierDependency.getWarnings (E:\\webpack-4-latest\\lib\\dependencies\\HarmonyImportSpecifierDependency.js:60:15)\n    at Compilation.reportDependencyErrorsAndWarnings (E:\\webpack-4-latest\\lib\\Compilation.js:1454:24)\n    at E:\\webpack-4-latest\\lib\\Compilation.js:1258:10\n    at AsyncSeriesHook.eval [as callAsync] (eval at create (E:\\webpack-4-latest\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at AsyncSeriesHook.lazyCompileHook (E:\\webpack-4-latest\\node_modules\\tapable\\lib\\Hook.js:154:20)\n    at Compilation.finish (E:\\webpack-4-latest\\lib\\Compilation.js:1253:28)\n    at E:\\webpack-4-latest\\lib\\Compiler.js:672:17\n    at _done (eval at create (E:\\webpack-4-latest\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:9:1)\n    at eval (eval at create (E:\\webpack-4-latest\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:32:22)"
+  ],
   "version": "4.47.0",
-  "hash": "6cc3b59c10dc2d3a1a5f",
-  "time": 218,
-  "builtAt": 1705584389524,
+  "hash": "bf45dd3e14e459918959",
+  "time": 158965,
+  "builtAt": 1705641067258,
   "publicPath": "",
-  "outputPath": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\v4\\dist",
+  "outputPath": "E:\\playground\\js-esm-async\\v4\\dist",
   "assetsByChunkName": {
-    "chunk-a": "chunk-a.js",
-    "chunk-foo": "chunk-foo.js",
-    "main": "main.js"
+    "entry": "entry.js",
+    "home": "home.js"
   },
   "assets": [
     {
-      "name": "chunk-a.js",
-      "size": 744,
+      "name": "0.js",
+      "size": 950,
       "chunks": [
-        "chunk-a"
+        0
+      ],
+      "chunkNames": [],
+      "info": {},
+      "emitted": true
+    },
+    {
+      "name": "entry.js",
+      "size": 10430,
+      "chunks": [
+        "entry"
       ],
       "chunkNames": [
-        "chunk-a"
+        "entry"
       ],
       "info": {},
       "emitted": true
     },
     {
-      "name": "chunk-foo.js",
-      "size": 425,
+      "name": "home.js",
+      "size": 8731,
       "chunks": [
-        "chunk-foo"
+        "home"
       ],
       "chunkNames": [
-        "chunk-foo"
-      ],
-      "info": {},
-      "emitted": true
-    },
-    {
-      "name": "main.js",
-      "size": 9698,
-      "chunks": [
-        "main"
-      ],
-      "chunkNames": [
-        "main"
+        "home"
       ],
       "info": {},
       "emitted": true
@@ -52,44 +52,44 @@
   ],
   "filteredAssets": 0,
   "entrypoints": {
-    "main": {
+    "entry": {
       "chunks": [
-        "main"
+        "entry"
       ],
       "assets": [
-        "main.js"
+        "entry.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "home": {
+      "chunks": [
+        "home"
+      ],
+      "assets": [
+        "home.js"
       ],
       "children": {},
       "childAssets": {}
     }
   },
   "namedChunkGroups": {
-    "main": {
+    "entry": {
       "chunks": [
-        "main"
+        "entry"
       ],
       "assets": [
-        "main.js"
+        "entry.js"
       ],
       "children": {},
       "childAssets": {}
     },
-    "chunk-foo": {
+    "home": {
       "chunks": [
-        "chunk-foo"
+        "home"
       ],
       "assets": [
-        "chunk-foo.js"
-      ],
-      "children": {},
-      "childAssets": {}
-    },
-    "chunk-a": {
-      "chunks": [
-        "chunk-a"
-      ],
-      "assets": [
-        "chunk-a.js"
+        "home.js"
       ],
       "children": {},
       "childAssets": {}
@@ -97,131 +97,51 @@
   },
   "chunks": [
     {
-      "id": "chunk-a",
+      "id": 0,
       "rendered": true,
       "initial": false,
       "entry": false,
-      "size": 131,
-      "names": [
-        "chunk-a"
-      ],
+      "size": 101,
+      "names": [],
       "files": [
-        "chunk-a.js"
+        "0.js"
       ],
-      "hash": "2286bedf4accf8f78815",
+      "hash": "730e69f71323270cafc7",
       "siblings": [],
       "parents": [
-        "main"
-      ],
-      "children": [
-        "chunk-foo"
-      ],
-      "childrenByOrder": {},
-      "modules": [
-        {
-          "id": "./src/mod-a.js",
-          "identifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\mod-a.js",
-          "name": "./src/mod-a.js",
-          "index": 3,
-          "index2": 3,
-          "size": 131,
-          "cacheable": true,
-          "built": true,
-          "optional": false,
-          "prefetched": false,
-          "chunks": [
-            "chunk-a"
-          ],
-          "issuer": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
-          "issuerId": "./src/main.js",
-          "issuerName": "./src/main.js",
-          "issuerPath": [
-            {
-              "id": "./src/main.js",
-              "identifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
-              "name": "./src/main.js"
-            }
-          ],
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "assets": [],
-          "reasons": [
-            {
-              "moduleId": "./src/main.js",
-              "moduleIdentifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
-              "module": "./src/main.js",
-              "moduleName": "./src/main.js",
-              "type": "import()",
-              "userRequest": "./mod-a.js",
-              "loc": "13:2-15:16"
-            }
-          ],
-          "providedExports": [
-            "y",
-            "default"
-          ],
-          "optimizationBailout": [],
-          "depth": 1,
-          "source": "\nexport const y = (m) => {\n\tif(m) {\n\t\timport(\"./foo.js\").then(mod => {\n\t\t\tconsole.log(m + mod.default)\n\t\t})\n\t}\n}\nexport default x\n\n"
-        }
-      ],
-      "filteredModules": 0,
-      "origins": [
-        {
-          "moduleId": "./src/main.js",
-          "module": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
-          "moduleIdentifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
-          "moduleName": "./src/main.js",
-          "loc": "13:2-15:16",
-          "request": "./mod-a.js",
-          "reasons": []
-        }
-      ]
-    },
-    {
-      "id": "chunk-foo",
-      "rendered": true,
-      "initial": false,
-      "entry": false,
-      "size": 21,
-      "names": [
-        "chunk-foo"
-      ],
-      "files": [
-        "chunk-foo.js"
-      ],
-      "hash": "6dfc2c02c61a9642dad4",
-      "siblings": [],
-      "parents": [
-        "chunk-a",
-        "main"
+        "entry",
+        "home"
       ],
       "children": [],
       "childrenByOrder": {},
       "modules": [
         {
-          "id": "./src/foo.js",
-          "identifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\foo.js",
-          "name": "./src/foo.js",
-          "index": 2,
-          "index2": 2,
-          "size": 21,
+          "id": "./src/m.js",
+          "identifier": "E:\\playground\\js-esm-async\\src\\m.js",
+          "name": "./src/m.js",
+          "index": 5,
+          "index2": 4,
+          "size": 25,
           "cacheable": true,
           "built": true,
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "chunk-foo"
+            0
           ],
-          "issuer": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
-          "issuerId": "./src/main.js",
-          "issuerName": "./src/main.js",
+          "issuer": "E:\\playground\\js-esm-async\\src\\share.js",
+          "issuerId": "./src/share.js",
+          "issuerName": "./src/share.js",
           "issuerPath": [
             {
-              "id": "./src/main.js",
-              "identifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
-              "name": "./src/main.js"
+              "id": "./src/home.js",
+              "identifier": "E:\\playground\\js-esm-async\\src\\home.js",
+              "name": "./src/home.js"
+            },
+            {
+              "id": "./src/share.js",
+              "identifier": "E:\\playground\\js-esm-async\\src\\share.js",
+              "name": "./src/share.js"
             }
           ],
           "failed": false,
@@ -230,22 +150,86 @@
           "assets": [],
           "reasons": [
             {
-              "moduleId": "./src/main.js",
-              "moduleIdentifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
-              "module": "./src/main.js",
-              "moduleName": "./src/main.js",
-              "type": "import()",
-              "userRequest": "./foo.js",
-              "loc": "7:2-9:14"
+              "moduleId": "./src/share.js",
+              "moduleIdentifier": "E:\\playground\\js-esm-async\\src\\share.js",
+              "module": "./src/share.js",
+              "moduleName": "./src/share.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./m.js",
+              "loc": "1:0-22"
             },
             {
-              "moduleId": "./src/mod-a.js",
-              "moduleIdentifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\mod-a.js",
-              "module": "./src/mod-a.js",
-              "moduleName": "./src/mod-a.js",
+              "moduleId": "./src/share.js",
+              "moduleIdentifier": "E:\\playground\\js-esm-async\\src\\share.js",
+              "module": "./src/share.js",
+              "moduleName": "./src/share.js",
+              "type": "harmony import specifier",
+              "userRequest": "./m.js",
+              "loc": "3:25-26"
+            }
+          ],
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 2,
+          "source": "export default 'm-module'"
+        },
+        {
+          "id": "./src/share.js",
+          "identifier": "E:\\playground\\js-esm-async\\src\\share.js",
+          "name": "./src/share.js",
+          "index": 4,
+          "index2": 5,
+          "size": 76,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "E:\\playground\\js-esm-async\\src\\home.js",
+          "issuerId": "./src/home.js",
+          "issuerName": "./src/home.js",
+          "issuerPath": [
+            {
+              "id": "./src/home.js",
+              "identifier": "E:\\playground\\js-esm-async\\src\\home.js",
+              "name": "./src/home.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": "./src/a.js",
+              "moduleIdentifier": "E:\\playground\\js-esm-async\\src\\a.js",
+              "module": "./src/a.js",
+              "moduleName": "./src/a.js",
               "type": "import()",
-              "userRequest": "./foo.js",
-              "loc": "4:2-20"
+              "userRequest": "./share.js",
+              "loc": "3:2-22"
+            },
+            {
+              "moduleId": "./src/b.js",
+              "moduleIdentifier": "E:\\playground\\js-esm-async\\src\\b.js",
+              "module": "./src/b.js",
+              "moduleName": "./src/b.js",
+              "type": "import()",
+              "userRequest": "./share.js",
+              "loc": "3:2-22"
+            },
+            {
+              "moduleId": "./src/home.js",
+              "moduleIdentifier": "E:\\playground\\js-esm-async\\src\\home.js",
+              "module": "./src/home.js",
+              "moduleName": "./src/home.js",
+              "type": "import()",
+              "userRequest": "./share.js",
+              "loc": "2:4-24"
             }
           ],
           "providedExports": [
@@ -253,65 +237,183 @@
           ],
           "optimizationBailout": [],
           "depth": 1,
-          "source": "export default 'foo'\n"
+          "source": "import m from './m.js'\r\n\r\nconst share = 'share ' + m\r\n\r\nexport default share"
         }
       ],
       "filteredModules": 0,
       "origins": [
         {
-          "moduleId": "./src/main.js",
-          "module": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
-          "moduleIdentifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
-          "moduleName": "./src/main.js",
-          "loc": "7:2-9:14",
-          "request": "./foo.js",
+          "moduleId": "./src/a.js",
+          "module": "E:\\playground\\js-esm-async\\src\\a.js",
+          "moduleIdentifier": "E:\\playground\\js-esm-async\\src\\a.js",
+          "moduleName": "./src/a.js",
+          "loc": "3:2-22",
+          "request": "./share.js",
           "reasons": []
         },
         {
-          "moduleId": "./src/mod-a.js",
-          "module": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\mod-a.js",
-          "moduleIdentifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\mod-a.js",
-          "moduleName": "./src/mod-a.js",
-          "loc": "4:2-20",
-          "request": "./foo.js",
+          "moduleId": "./src/b.js",
+          "module": "E:\\playground\\js-esm-async\\src\\b.js",
+          "moduleIdentifier": "E:\\playground\\js-esm-async\\src\\b.js",
+          "moduleName": "./src/b.js",
+          "loc": "3:2-22",
+          "request": "./share.js",
+          "reasons": []
+        },
+        {
+          "moduleId": "./src/home.js",
+          "module": "E:\\playground\\js-esm-async\\src\\home.js",
+          "moduleIdentifier": "E:\\playground\\js-esm-async\\src\\home.js",
+          "moduleName": "./src/home.js",
+          "loc": "2:4-24",
+          "request": "./share.js",
           "reasons": []
         }
       ]
     },
     {
-      "id": "main",
+      "id": "entry",
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 404,
+      "size": 709,
       "names": [
-        "main"
+        "entry"
       ],
       "files": [
-        "main.js"
+        "entry.js"
       ],
-      "hash": "02d4b4aa888c7287e71e",
+      "hash": "b3005ed24aa3ace16953",
       "siblings": [],
       "parents": [],
       "children": [
-        "chunk-a",
-        "chunk-foo"
+        0
       ],
       "childrenByOrder": {},
       "modules": [
         {
-          "id": "./src/main.js",
-          "identifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
-          "name": "./src/main.js",
-          "index": 0,
-          "index2": 1,
-          "size": 381,
+          "id": "./src/a.js",
+          "identifier": "E:\\playground\\js-esm-async\\src\\a.js",
+          "name": "./src/a.js",
+          "index": 1,
+          "index2": 0,
+          "size": 148,
           "cacheable": true,
           "built": true,
           "optional": false,
           "prefetched": false,
           "chunks": [
-            "main"
+            "entry"
+          ],
+          "issuer": "E:\\playground\\js-esm-async\\src\\entry.js",
+          "issuerId": "./src/entry.js",
+          "issuerName": "./src/entry.js",
+          "issuerPath": [
+            {
+              "id": "./src/entry.js",
+              "identifier": "E:\\playground\\js-esm-async\\src\\entry.js",
+              "name": "./src/entry.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": "./src/entry.js",
+              "moduleIdentifier": "E:\\playground\\js-esm-async\\src\\entry.js",
+              "module": "./src/entry.js",
+              "moduleName": "./src/entry.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./a.js",
+              "loc": "1:0-22"
+            },
+            {
+              "moduleId": "./src/entry.js",
+              "moduleIdentifier": "E:\\playground\\js-esm-async\\src\\entry.js",
+              "module": "./src/entry.js",
+              "moduleName": "./src/entry.js",
+              "type": "harmony import specifier",
+              "userRequest": "./a.js",
+              "loc": "7:2-3"
+            }
+          ],
+          "providedExports": [
+            "load"
+          ],
+          "optimizationBailout": [],
+          "depth": 1,
+          "source": "export const load = (share) => {\r\n\tif(share) {\r\n\t\timport(\"./share.js\").then(mod => {\r\n\t\t\tconsole.log('a module: share=', mod.default)\r\n\t\t})\r\n\t}\r\n}\r\n"
+        },
+        {
+          "id": "./src/b.js",
+          "identifier": "E:\\playground\\js-esm-async\\src\\b.js",
+          "name": "./src/b.js",
+          "index": 2,
+          "index2": 1,
+          "size": 146,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "entry"
+          ],
+          "issuer": "E:\\playground\\js-esm-async\\src\\entry.js",
+          "issuerId": "./src/entry.js",
+          "issuerName": "./src/entry.js",
+          "issuerPath": [
+            {
+              "id": "./src/entry.js",
+              "identifier": "E:\\playground\\js-esm-async\\src\\entry.js",
+              "name": "./src/entry.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": "./src/entry.js",
+              "moduleIdentifier": "E:\\playground\\js-esm-async\\src\\entry.js",
+              "module": "./src/entry.js",
+              "moduleName": "./src/entry.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./b.js",
+              "loc": "2:0-22"
+            },
+            {
+              "moduleId": "./src/entry.js",
+              "moduleIdentifier": "E:\\playground\\js-esm-async\\src\\entry.js",
+              "module": "./src/entry.js",
+              "moduleName": "./src/entry.js",
+              "type": "harmony import specifier",
+              "userRequest": "./b.js",
+              "loc": "8:2-3"
+            }
+          ],
+          "providedExports": [
+            "load"
+          ],
+          "optimizationBailout": [],
+          "depth": 1,
+          "source": "export const load = (share) => {\r\n\tif(share) {\r\n\t\timport(\"./share.js\").then(mod => {\r\n\t\t\tconsole.log('b module: share=', mod.default)\r\n\t\t})\r\n\t}\r\n}"
+        },
+        {
+          "id": "./src/entry.js",
+          "identifier": "E:\\playground\\js-esm-async\\src\\entry.js",
+          "name": "./src/entry.js",
+          "index": 0,
+          "index2": 2,
+          "size": 415,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "entry"
           ],
           "issuer": null,
           "issuerId": null,
@@ -328,71 +430,14 @@
               "module": null,
               "moduleName": null,
               "type": "single entry",
-              "userRequest": "./src/main.js",
-              "loc": "main"
+              "userRequest": "./src/entry.js",
+              "loc": "entry"
             }
           ],
-          "providedExports": [
-            "hello"
-          ],
+          "providedExports": [],
           "optimizationBailout": [],
           "depth": 0,
-          "source": "// import a from \"./mod-a.js\"\nimport b from \"./mod-b.js\"\n\nfunction hello(msg) {\n\tconsole.log('hello msg', msg)\n\tif (msg) {\n\t\timport(\n\t\t\t/* webpackChunkName: \"chunk-foo\" */\n\t\t\t\"./foo.js\").then((mod) => {\n\t\t\tconsole.log(\"foo is \", mod)\n\t\t})\n\n\t\timport(\n\t\t\t/* webpackChunkName: \"chunk-a\" */\n\t\t\t'./mod-a.js').then(mod => {\n\t\t\tmod.y()\n\t\t})\n\t}\n\n\treturn {\n\t\ta,\n\t\tb,\n\t}\n}\n\nexport { hello }\n"
-        },
-        {
-          "id": "./src/mod-b.js",
-          "identifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\mod-b.js",
-          "name": "./src/mod-b.js",
-          "index": 1,
-          "index2": 0,
-          "size": 23,
-          "cacheable": true,
-          "built": true,
-          "optional": false,
-          "prefetched": false,
-          "chunks": [
-            "main"
-          ],
-          "issuer": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
-          "issuerId": "./src/main.js",
-          "issuerName": "./src/main.js",
-          "issuerPath": [
-            {
-              "id": "./src/main.js",
-              "identifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
-              "name": "./src/main.js"
-            }
-          ],
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "assets": [],
-          "reasons": [
-            {
-              "moduleId": "./src/main.js",
-              "moduleIdentifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
-              "module": "./src/main.js",
-              "moduleName": "./src/main.js",
-              "type": "harmony side effect evaluation",
-              "userRequest": "./mod-b.js",
-              "loc": "2:0-26"
-            },
-            {
-              "moduleId": "./src/main.js",
-              "moduleIdentifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
-              "module": "./src/main.js",
-              "moduleName": "./src/main.js",
-              "type": "harmony import specifier",
-              "userRequest": "./mod-b.js",
-              "loc": "22:2-3"
-            }
-          ],
-          "providedExports": [
-            "default"
-          ],
-          "optimizationBailout": [],
-          "depth": 1,
-          "source": "export default 'mod-b'\n"
+          "source": "import a from \"./a.js\"\r\nimport b from \"./b.js\"\r\n\r\nfunction hello(msg) {\r\n\tconsole.log('hello msg', msg)\r\n\tif (msg) {\r\n\t\ta.load()\r\n\t\tb.load()\r\n\t\t// import(\r\n\t\t// \t/* webpackChunkName: \"chunk-foo\" */\r\n\t\t// \t\"./share.js\").then((mod) => {\r\n\t\t// \tconsole.log(\"foo is \", mod)\r\n\t\t// })\r\n\r\n\t\t// import(\r\n\t\t// \t/* webpackChunkName: \"chunk-a\" */\r\n\t\t// \t'./a.js').then(mod => {\r\n\t\t// \tmod.y()\r\n\t\t// })\r\n\t}\r\n}\r\n\r\nhello('111')\r\n"
         }
       ],
       "filteredModules": 0,
@@ -401,8 +446,79 @@
           "module": "",
           "moduleIdentifier": "",
           "moduleName": "",
-          "loc": "main",
-          "request": "./src/main.js",
+          "loc": "entry",
+          "request": "./src/entry.js",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "id": "home",
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "size": 173,
+      "names": [
+        "home"
+      ],
+      "files": [
+        "home.js"
+      ],
+      "hash": "d43fe95f22e6ec179a00",
+      "siblings": [],
+      "parents": [],
+      "children": [
+        0
+      ],
+      "childrenByOrder": {},
+      "modules": [
+        {
+          "id": "./src/home.js",
+          "identifier": "E:\\playground\\js-esm-async\\src\\home.js",
+          "name": "./src/home.js",
+          "index": 3,
+          "index2": 3,
+          "size": 173,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "home"
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "./src/home.js",
+              "loc": "home"
+            }
+          ],
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 0,
+          "source": "function onLoad() {\r\n    import(\"./share.js\").then(mod => {\r\n        console.log('home entry, share=', mod.default)\r\n    })\r\n}\r\n\r\nif(window) {\r\n    window.onload = onLoad\r\n}"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "home",
+          "request": "./src/home.js",
           "reasons": []
         }
       ]
@@ -410,27 +526,27 @@
   ],
   "modules": [
     {
-      "id": "./src/foo.js",
-      "identifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\foo.js",
-      "name": "./src/foo.js",
-      "index": 2,
-      "index2": 2,
-      "size": 21,
+      "id": "./src/a.js",
+      "identifier": "E:\\playground\\js-esm-async\\src\\a.js",
+      "name": "./src/a.js",
+      "index": 1,
+      "index2": 0,
+      "size": 148,
       "cacheable": true,
       "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "chunk-foo"
+        "entry"
       ],
-      "issuer": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
-      "issuerId": "./src/main.js",
-      "issuerName": "./src/main.js",
+      "issuer": "E:\\playground\\js-esm-async\\src\\entry.js",
+      "issuerId": "./src/entry.js",
+      "issuerName": "./src/entry.js",
       "issuerPath": [
         {
-          "id": "./src/main.js",
-          "identifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
-          "name": "./src/main.js"
+          "id": "./src/entry.js",
+          "identifier": "E:\\playground\\js-esm-async\\src\\entry.js",
+          "name": "./src/entry.js"
         }
       ],
       "failed": false,
@@ -439,44 +555,99 @@
       "assets": [],
       "reasons": [
         {
-          "moduleId": "./src/main.js",
-          "moduleIdentifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
-          "module": "./src/main.js",
-          "moduleName": "./src/main.js",
-          "type": "import()",
-          "userRequest": "./foo.js",
-          "loc": "7:2-9:14"
+          "moduleId": "./src/entry.js",
+          "moduleIdentifier": "E:\\playground\\js-esm-async\\src\\entry.js",
+          "module": "./src/entry.js",
+          "moduleName": "./src/entry.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "./a.js",
+          "loc": "1:0-22"
         },
         {
-          "moduleId": "./src/mod-a.js",
-          "moduleIdentifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\mod-a.js",
-          "module": "./src/mod-a.js",
-          "moduleName": "./src/mod-a.js",
-          "type": "import()",
-          "userRequest": "./foo.js",
-          "loc": "4:2-20"
+          "moduleId": "./src/entry.js",
+          "moduleIdentifier": "E:\\playground\\js-esm-async\\src\\entry.js",
+          "module": "./src/entry.js",
+          "moduleName": "./src/entry.js",
+          "type": "harmony import specifier",
+          "userRequest": "./a.js",
+          "loc": "7:2-3"
         }
       ],
       "providedExports": [
-        "default"
+        "load"
       ],
       "optimizationBailout": [],
       "depth": 1,
-      "source": "export default 'foo'\n"
+      "source": "export const load = (share) => {\r\n\tif(share) {\r\n\t\timport(\"./share.js\").then(mod => {\r\n\t\t\tconsole.log('a module: share=', mod.default)\r\n\t\t})\r\n\t}\r\n}\r\n"
     },
     {
-      "id": "./src/main.js",
-      "identifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
-      "name": "./src/main.js",
-      "index": 0,
+      "id": "./src/b.js",
+      "identifier": "E:\\playground\\js-esm-async\\src\\b.js",
+      "name": "./src/b.js",
+      "index": 2,
       "index2": 1,
-      "size": 381,
+      "size": 146,
       "cacheable": true,
       "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "main"
+        "entry"
+      ],
+      "issuer": "E:\\playground\\js-esm-async\\src\\entry.js",
+      "issuerId": "./src/entry.js",
+      "issuerName": "./src/entry.js",
+      "issuerPath": [
+        {
+          "id": "./src/entry.js",
+          "identifier": "E:\\playground\\js-esm-async\\src\\entry.js",
+          "name": "./src/entry.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": "./src/entry.js",
+          "moduleIdentifier": "E:\\playground\\js-esm-async\\src\\entry.js",
+          "module": "./src/entry.js",
+          "moduleName": "./src/entry.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "./b.js",
+          "loc": "2:0-22"
+        },
+        {
+          "moduleId": "./src/entry.js",
+          "moduleIdentifier": "E:\\playground\\js-esm-async\\src\\entry.js",
+          "module": "./src/entry.js",
+          "moduleName": "./src/entry.js",
+          "type": "harmony import specifier",
+          "userRequest": "./b.js",
+          "loc": "8:2-3"
+        }
+      ],
+      "providedExports": [
+        "load"
+      ],
+      "optimizationBailout": [],
+      "depth": 1,
+      "source": "export const load = (share) => {\r\n\tif(share) {\r\n\t\timport(\"./share.js\").then(mod => {\r\n\t\t\tconsole.log('b module: share=', mod.default)\r\n\t\t})\r\n\t}\r\n}"
+    },
+    {
+      "id": "./src/entry.js",
+      "identifier": "E:\\playground\\js-esm-async\\src\\entry.js",
+      "name": "./src/entry.js",
+      "index": 0,
+      "index2": 2,
+      "size": 415,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "entry"
       ],
       "issuer": null,
       "issuerId": null,
@@ -493,86 +664,80 @@
           "module": null,
           "moduleName": null,
           "type": "single entry",
-          "userRequest": "./src/main.js",
-          "loc": "main"
+          "userRequest": "./src/entry.js",
+          "loc": "entry"
         }
       ],
-      "providedExports": [
-        "hello"
-      ],
+      "providedExports": [],
       "optimizationBailout": [],
       "depth": 0,
-      "source": "// import a from \"./mod-a.js\"\nimport b from \"./mod-b.js\"\n\nfunction hello(msg) {\n\tconsole.log('hello msg', msg)\n\tif (msg) {\n\t\timport(\n\t\t\t/* webpackChunkName: \"chunk-foo\" */\n\t\t\t\"./foo.js\").then((mod) => {\n\t\t\tconsole.log(\"foo is \", mod)\n\t\t})\n\n\t\timport(\n\t\t\t/* webpackChunkName: \"chunk-a\" */\n\t\t\t'./mod-a.js').then(mod => {\n\t\t\tmod.y()\n\t\t})\n\t}\n\n\treturn {\n\t\ta,\n\t\tb,\n\t}\n}\n\nexport { hello }\n"
+      "source": "import a from \"./a.js\"\r\nimport b from \"./b.js\"\r\n\r\nfunction hello(msg) {\r\n\tconsole.log('hello msg', msg)\r\n\tif (msg) {\r\n\t\ta.load()\r\n\t\tb.load()\r\n\t\t// import(\r\n\t\t// \t/* webpackChunkName: \"chunk-foo\" */\r\n\t\t// \t\"./share.js\").then((mod) => {\r\n\t\t// \tconsole.log(\"foo is \", mod)\r\n\t\t// })\r\n\r\n\t\t// import(\r\n\t\t// \t/* webpackChunkName: \"chunk-a\" */\r\n\t\t// \t'./a.js').then(mod => {\r\n\t\t// \tmod.y()\r\n\t\t// })\r\n\t}\r\n}\r\n\r\nhello('111')\r\n"
     },
     {
-      "id": "./src/mod-a.js",
-      "identifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\mod-a.js",
-      "name": "./src/mod-a.js",
+      "id": "./src/home.js",
+      "identifier": "E:\\playground\\js-esm-async\\src\\home.js",
+      "name": "./src/home.js",
       "index": 3,
       "index2": 3,
-      "size": 131,
+      "size": 173,
       "cacheable": true,
       "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "chunk-a"
+        "home"
       ],
-      "issuer": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
-      "issuerId": "./src/main.js",
-      "issuerName": "./src/main.js",
-      "issuerPath": [
-        {
-          "id": "./src/main.js",
-          "identifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
-          "name": "./src/main.js"
-        }
-      ],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "assets": [],
       "reasons": [
         {
-          "moduleId": "./src/main.js",
-          "moduleIdentifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
-          "module": "./src/main.js",
-          "moduleName": "./src/main.js",
-          "type": "import()",
-          "userRequest": "./mod-a.js",
-          "loc": "13:2-15:16"
+          "moduleId": null,
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "type": "single entry",
+          "userRequest": "./src/home.js",
+          "loc": "home"
         }
       ],
-      "providedExports": [
-        "y",
-        "default"
-      ],
+      "providedExports": null,
       "optimizationBailout": [],
-      "depth": 1,
-      "source": "\nexport const y = (m) => {\n\tif(m) {\n\t\timport(\"./foo.js\").then(mod => {\n\t\t\tconsole.log(m + mod.default)\n\t\t})\n\t}\n}\nexport default x\n\n"
+      "depth": 0,
+      "source": "function onLoad() {\r\n    import(\"./share.js\").then(mod => {\r\n        console.log('home entry, share=', mod.default)\r\n    })\r\n}\r\n\r\nif(window) {\r\n    window.onload = onLoad\r\n}"
     },
     {
-      "id": "./src/mod-b.js",
-      "identifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\mod-b.js",
-      "name": "./src/mod-b.js",
-      "index": 1,
-      "index2": 0,
-      "size": 23,
+      "id": "./src/m.js",
+      "identifier": "E:\\playground\\js-esm-async\\src\\m.js",
+      "name": "./src/m.js",
+      "index": 5,
+      "index2": 4,
+      "size": 25,
       "cacheable": true,
       "built": true,
       "optional": false,
       "prefetched": false,
       "chunks": [
-        "main"
+        0
       ],
-      "issuer": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
-      "issuerId": "./src/main.js",
-      "issuerName": "./src/main.js",
+      "issuer": "E:\\playground\\js-esm-async\\src\\share.js",
+      "issuerId": "./src/share.js",
+      "issuerName": "./src/share.js",
       "issuerPath": [
         {
-          "id": "./src/main.js",
-          "identifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
-          "name": "./src/main.js"
+          "id": "./src/home.js",
+          "identifier": "E:\\playground\\js-esm-async\\src\\home.js",
+          "name": "./src/home.js"
+        },
+        {
+          "id": "./src/share.js",
+          "identifier": "E:\\playground\\js-esm-async\\src\\share.js",
+          "name": "./src/share.js"
         }
       ],
       "failed": false,
@@ -581,22 +746,86 @@
       "assets": [],
       "reasons": [
         {
-          "moduleId": "./src/main.js",
-          "moduleIdentifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
-          "module": "./src/main.js",
-          "moduleName": "./src/main.js",
+          "moduleId": "./src/share.js",
+          "moduleIdentifier": "E:\\playground\\js-esm-async\\src\\share.js",
+          "module": "./src/share.js",
+          "moduleName": "./src/share.js",
           "type": "harmony side effect evaluation",
-          "userRequest": "./mod-b.js",
-          "loc": "2:0-26"
+          "userRequest": "./m.js",
+          "loc": "1:0-22"
         },
         {
-          "moduleId": "./src/main.js",
-          "moduleIdentifier": "C:\\Users\\round00\\Desktop\\fe\\playground\\js-esm-async\\src\\main.js",
-          "module": "./src/main.js",
-          "moduleName": "./src/main.js",
+          "moduleId": "./src/share.js",
+          "moduleIdentifier": "E:\\playground\\js-esm-async\\src\\share.js",
+          "module": "./src/share.js",
+          "moduleName": "./src/share.js",
           "type": "harmony import specifier",
-          "userRequest": "./mod-b.js",
-          "loc": "22:2-3"
+          "userRequest": "./m.js",
+          "loc": "3:25-26"
+        }
+      ],
+      "providedExports": [
+        "default"
+      ],
+      "optimizationBailout": [],
+      "depth": 2,
+      "source": "export default 'm-module'"
+    },
+    {
+      "id": "./src/share.js",
+      "identifier": "E:\\playground\\js-esm-async\\src\\share.js",
+      "name": "./src/share.js",
+      "index": 4,
+      "index2": 5,
+      "size": 76,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "E:\\playground\\js-esm-async\\src\\home.js",
+      "issuerId": "./src/home.js",
+      "issuerName": "./src/home.js",
+      "issuerPath": [
+        {
+          "id": "./src/home.js",
+          "identifier": "E:\\playground\\js-esm-async\\src\\home.js",
+          "name": "./src/home.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": "./src/a.js",
+          "moduleIdentifier": "E:\\playground\\js-esm-async\\src\\a.js",
+          "module": "./src/a.js",
+          "moduleName": "./src/a.js",
+          "type": "import()",
+          "userRequest": "./share.js",
+          "loc": "3:2-22"
+        },
+        {
+          "moduleId": "./src/b.js",
+          "moduleIdentifier": "E:\\playground\\js-esm-async\\src\\b.js",
+          "module": "./src/b.js",
+          "moduleName": "./src/b.js",
+          "type": "import()",
+          "userRequest": "./share.js",
+          "loc": "3:2-22"
+        },
+        {
+          "moduleId": "./src/home.js",
+          "moduleIdentifier": "E:\\playground\\js-esm-async\\src\\home.js",
+          "module": "./src/home.js",
+          "moduleName": "./src/home.js",
+          "type": "import()",
+          "userRequest": "./share.js",
+          "loc": "2:4-24"
         }
       ],
       "providedExports": [
@@ -604,14 +833,14 @@
       ],
       "optimizationBailout": [],
       "depth": 1,
-      "source": "export default 'mod-b'\n"
+      "source": "import m from './m.js'\r\n\r\nconst share = 'share ' + m\r\n\r\nexport default share"
     }
   ],
   "filteredModules": 0,
   "logging": {
     "webpack.buildChunkGraph.visitModules": {
       "entries": [],
-      "filteredEntries": 8,
+      "filteredEntries": 5,
       "debug": false
     }
   },

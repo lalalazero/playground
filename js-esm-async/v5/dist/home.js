@@ -1,23 +1,5 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
-/******/ 	var __webpack_modules__ = ({
-
-/***/ "./src/mod-b.js":
-/*!**********************!*\
-  !*** ./src/mod-b.js ***!
-  \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ('mod-b');
-
-
-/***/ })
-
-/******/ 	});
+/******/ 	var __webpack_modules__ = ({});
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
@@ -186,7 +168,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"main": 0
+/******/ 			"home": 0
 /******/ 		};
 /******/ 		
 /******/ 		__webpack_require__.f.j = (chunkId, promises) => {
@@ -270,40 +252,17 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-(() => {
 /*!*********************!*\
-  !*** ./src/main.js ***!
+  !*** ./src/home.js ***!
   \*********************/
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   hello: () => (/* binding */ hello)
-/* harmony export */ });
-/* harmony import */ var _mod_b_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mod-b.js */ "./src/mod-b.js");
-// import a from "./mod-a.js"
-
-
-function hello(msg) {
-	console.log('hello msg', msg)
-	if (msg) {
-		__webpack_require__.e(/*! import() | chunk-foo */ "chunk-foo").then(__webpack_require__.bind(__webpack_require__, /*! ./foo.js */ "./src/foo.js")).then((mod) => {
-			console.log("foo is ", mod)
-		})
-
-		__webpack_require__.e(/*! import() | chunk-a */ "chunk-a").then(__webpack_require__.bind(__webpack_require__, /*! ./mod-a.js */ "./src/mod-a.js")).then(mod => {
-			mod.y()
-		})
-	}
-
-	return {
-		a,
-		b: _mod_b_js__WEBPACK_IMPORTED_MODULE_0__["default"],
-	}
+function onLoad() {
+    __webpack_require__.e(/*! import() */ "src_share_js").then(__webpack_require__.bind(__webpack_require__, /*! ./share.js */ "./src/share.js")).then(mod => {
+        console.log('home entry, share=', mod.default)
+    })
 }
 
-
-
-})();
-
+if(window) {
+    window.onload = onLoad
+}
 /******/ })()
 ;
