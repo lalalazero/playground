@@ -1,0 +1,47 @@
+{
+  "errors": [],
+  "warnings": [],
+  "chunks": [
+    {
+      "id": "entry",
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "size": 339,
+      "names": [
+        "entry"
+      ],
+      "files": [
+        "entry.js"
+      ],
+      "hash": "2e1072ed1cf8fe03614c",
+      "siblings": [
+        "share"
+      ],
+      "parents": [],
+      "children": [],
+      "childrenByOrder": {}
+    },
+    {
+      "id": "share",
+      "rendered": true,
+      "initial": true,
+      "entry": false,
+      "reason": "split chunk (cache group: defaultVendors) (name: share)",
+      "size": 30,
+      "names": [
+        "share"
+      ],
+      "files": [
+        "share-chunk.js"
+      ],
+      "hash": "10414ca320938f68a75d",
+      "siblings": [
+        "entry"
+      ],
+      "parents": [],
+      "children": [],
+      "childrenByOrder": {}
+    }
+  ]
+}

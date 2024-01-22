@@ -1,0 +1,54 @@
+{
+  "chunks": [
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 3463,
+      "sizes": {
+        "javascript": 339,
+        "runtime": 3124
+      },
+      "names": [
+        "entry"
+      ],
+      "idHints": [],
+      "runtime": [
+        "entry"
+      ],
+      "files": [
+        "entry.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "df2f3682cc162d33cb71",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: defaultVendors) (name: share)",
+      "size": 30,
+      "sizes": {
+        "javascript": 30
+      },
+      "names": [
+        "share"
+      ],
+      "idHints": [
+        "defaultVendors"
+      ],
+      "runtime": [
+        "entry"
+      ],
+      "files": [
+        "share-chunk.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "0a1803d69628b7c497df",
+      "childrenByOrder": {}
+    }
+  ]
+}

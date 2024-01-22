@@ -9,31 +9,88 @@ const TARGET_CASE = "02-one-entry-common-chunk";
 
 const cwd = path.join(process.cwd(), TARGET_CASE);
 
+const DEFAULT_WEBPACK_CONFIGS = [
+  "webpack.config.js",
+  "webpack.v40.config.js",
+  "webpack.v4.config.js",
+  "webpack.v5.config.js",
+];
+
 function getPath(webpackVersion, dist) {
   return path.join(cwd, webpackVersion, dist);
 }
 
 function getWebpack40Config() {
-  const config = commonWebpackConfig();
+  let config = null;
+
+  try {
+    config = require(cwd + "/webpack.config.js");
+  } catch (e) {
+    try {
+      config = require(cwd + "/webpack.v40.config.js");
+    } catch (e) {
+      config = commonWebpackConfig();
+    }
+  }
+
+  if (!config) {
+    console.log("no valid webpack v4.0 config");
+    return;
+  }
 
   config.output.path = getPath("v4-0", config.output.path);
+  if (!config.plugins) {
+    config.plugins = [];
+  }
   config.plugins.push(new CleanWebpackPlugin());
 
   return config;
 }
 
 function getWebpack4Config() {
-  const config = commonWebpackConfig();
+  let config = null;
+
+  try {
+    config = require(cwd + "/webpack.config.js");
+  } catch (e) {
+    try {
+      config = require(cwd + "/webpack.v4.config.js");
+    } catch (e) {
+      config = commonWebpackConfig();
+    }
+  }
+
+  if (!config) {
+    console.log("no valid webpack v4 config");
+    return;
+  }
 
   config.output.path = getPath("v4", config.output.path);
+  if (!config.plugins) {
+    config.plugins = [];
+  }
   config.plugins.push(new CleanWebpackPlugin());
 
   return config;
 }
 
 function getWebpack5Config() {
-  const config = commonWebpackConfig();
+  let config = null;
 
+  try {
+    config = require(cwd + "/webpack.config.js");
+  } catch (e) {
+    try {
+      config = require(cwd + "/webpack.v5.config.js");
+    } catch (e) {
+      config = commonWebpackConfig();
+    }
+  }
+
+  if (!config) {
+    console.log("no valid webpack v5 config");
+    return;
+  }
   config.output.path = getPath("v5", config.output.path);
   config.output.clean = true;
 
@@ -41,12 +98,6 @@ function getWebpack5Config() {
 }
 
 function commonWebpackConfig() {
-  const defaultConfig = path.join(cwd, "webpack.config.js");
-
-  if (fs.existsSync(defaultConfig)) {
-    return require(defaultConfig);
-  }
-
   const config = {
     mode: "development",
     entry: {
@@ -74,23 +125,23 @@ function commonWebpackConfig() {
 
 [
   { value: webpack_4_0, version: "v4.0", config: getWebpack40Config() },
-  // { value: webpack4, version: "v4", config: getWebpack4Config() },
-  // { value: webpack5, version: "v5", config: getWebpack5Config() },
+  { value: webpack4, version: "v4", config: getWebpack4Config() },
+  { value: webpack5, version: "v5", config: getWebpack5Config() },
 ].forEach(({ version, value: webpack, config }) => {
   const compiler = webpack(config);
 
   compiler.run((err, stats) => {
     if (stats && stats.toJson) {
-      let json = stats.toJson({ 
+      let json = stats.toJson({
         chunks: true,
         // chunkModules: true,
-        all: false
+        all: false,
       });
       let text = JSON.stringify(json, null, 2);
       let file = path.join(config.output.path, "stats.json");
 
-      if(fs.existsSync(file)) {
-        fs.rmSync(file)
+      if (fs.existsSync(file)) {
+        fs.rmSync(file);
       }
 
       fs.appendFileSync(file, text, "utf8");
