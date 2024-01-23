@@ -5,7 +5,7 @@ const LogRuntimeHooksOrderPlugin = require("log-runtime-hooks-order-webpack-plug
 
 const { CleanWebpackPlugin } = plugins;
 
-const TARGET_CASE = "02-one-entry-common-chunk";
+const TARGET_CASE = "step3";
 
 const cwd = path.join(process.cwd(), TARGET_CASE);
 
@@ -102,7 +102,7 @@ function commonWebpackConfig() {
     mode: "development",
     entry: {
       entry: "./src/entry.js",
-      home: "./src/home.js",
+      // home: "./src/home.js",
     },
     context: cwd,
     target: "web",
@@ -134,7 +134,7 @@ function commonWebpackConfig() {
     if (stats && stats.toJson) {
       let json = stats.toJson({
         chunks: true,
-        // chunkModules: true,
+        chunkModules: true,
         all: false,
       });
       let text = JSON.stringify(json, null, 2);

@@ -1,0 +1,136 @@
+{
+  "chunks": [
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 7379,
+      "sizes": {
+        "javascript": 497,
+        "runtime": 6882
+      },
+      "names": [
+        "entry"
+      ],
+      "idHints": [],
+      "runtime": [
+        "entry"
+      ],
+      "files": [
+        "entry.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "8916e20dd12cb7a01a1f",
+      "childrenByOrder": {},
+      "modules": [
+        {
+          "type": "runtime modules",
+          "moduleType": "runtime",
+          "filteredChildren": 9,
+          "size": 6882,
+          "sizes": {
+            "runtime": 6882
+          }
+        },
+        {
+          "type": "dependent modules",
+          "dependent": true,
+          "filteredChildren": 3,
+          "size": 178,
+          "sizes": {
+            "javascript": 178
+          }
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 319,
+          "sizes": {
+            "javascript": 319
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "E:\\playground\\step3\\src\\entry.js",
+          "name": "./src/entry.js",
+          "nameForCondition": "E:\\playground\\step3\\src\\entry.js",
+          "index": 0,
+          "preOrderIndex": 0,
+          "index2": 3,
+          "postOrderIndex": 3,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0
+        }
+      ]
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 28,
+      "sizes": {
+        "javascript": 28
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "entry"
+      ],
+      "files": [
+        "src_dynamic_js.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "040ead98d9524e0352a8",
+      "childrenByOrder": {},
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 28,
+          "sizes": {
+            "javascript": 28
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "E:\\playground\\step3\\src\\dynamic.js",
+          "name": "./src/dynamic.js",
+          "nameForCondition": "E:\\playground\\step3\\src\\dynamic.js",
+          "index": 4,
+          "preOrderIndex": 4,
+          "index2": 4,
+          "postOrderIndex": 4,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": "E:\\playground\\step3\\src\\entry.js",
+          "issuerName": "./src/entry.js",
+          "issuerPath": [
+            {
+              "identifier": "E:\\playground\\step3\\src\\entry.js",
+              "name": "./src/entry.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0
+        }
+      ]
+    }
+  ]
+}

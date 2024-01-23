@@ -1,0 +1,188 @@
+{
+  "errors": [],
+  "warnings": [],
+  "chunks": [
+    {
+      "id": "entry",
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "extraAsync": false,
+      "size": 497,
+      "names": [
+        "entry"
+      ],
+      "files": [
+        "entry.js"
+      ],
+      "hash": "a09383252bc5b12f63b0",
+      "parents": [],
+      "modules": [
+        {
+          "id": "./src/a.js",
+          "identifier": "E:\\playground\\step3\\src\\a.js",
+          "name": "./src/a.js",
+          "index": 1,
+          "index2": 1,
+          "size": 72,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "entry"
+          ],
+          "assets": [],
+          "issuer": "E:\\playground\\step3\\src\\entry.js",
+          "issuerId": "./src/entry.js",
+          "issuerName": "./src/entry.js",
+          "issuerPath": [
+            {
+              "id": "./src/entry.js",
+              "identifier": "E:\\playground\\step3\\src\\entry.js",
+              "name": "./src/entry.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0
+        },
+        {
+          "id": "./src/b.js",
+          "identifier": "E:\\playground\\step3\\src\\b.js",
+          "name": "./src/b.js",
+          "index": 3,
+          "index2": 2,
+          "size": 74,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "entry"
+          ],
+          "assets": [],
+          "issuer": "E:\\playground\\step3\\src\\entry.js",
+          "issuerId": "./src/entry.js",
+          "issuerName": "./src/entry.js",
+          "issuerPath": [
+            {
+              "id": "./src/entry.js",
+              "identifier": "E:\\playground\\step3\\src\\entry.js",
+              "name": "./src/entry.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0
+        },
+        {
+          "id": "./src/entry.js",
+          "identifier": "E:\\playground\\step3\\src\\entry.js",
+          "name": "./src/entry.js",
+          "index": 0,
+          "index2": 4,
+          "size": 319,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "entry"
+          ],
+          "assets": [],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0
+        },
+        {
+          "id": "./src/share.js",
+          "identifier": "E:\\playground\\step3\\src\\share.js",
+          "name": "./src/share.js",
+          "index": 2,
+          "index2": 0,
+          "size": 32,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "entry"
+          ],
+          "assets": [],
+          "issuer": "E:\\playground\\step3\\src\\a.js",
+          "issuerId": "./src/a.js",
+          "issuerName": "./src/a.js",
+          "issuerPath": [
+            {
+              "id": "./src/entry.js",
+              "identifier": "E:\\playground\\step3\\src\\entry.js",
+              "name": "./src/entry.js"
+            },
+            {
+              "id": "./src/a.js",
+              "identifier": "E:\\playground\\step3\\src\\a.js",
+              "name": "./src/a.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0
+        }
+      ],
+      "filteredModules": 0
+    },
+    {
+      "id": 0,
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "extraAsync": false,
+      "size": 28,
+      "names": [],
+      "files": [
+        "0.js"
+      ],
+      "hash": "8b2ecd20467a806cd7ce",
+      "parents": [
+        "entry"
+      ],
+      "modules": [
+        {
+          "id": "./src/dynamic.js",
+          "identifier": "E:\\playground\\step3\\src\\dynamic.js",
+          "name": "./src/dynamic.js",
+          "index": 4,
+          "index2": 3,
+          "size": 28,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": "E:\\playground\\step3\\src\\entry.js",
+          "issuerId": "./src/entry.js",
+          "issuerName": "./src/entry.js",
+          "issuerPath": [
+            {
+              "id": "./src/entry.js",
+              "identifier": "E:\\playground\\step3\\src\\entry.js",
+              "name": "./src/entry.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0
+        }
+      ],
+      "filteredModules": 0
+    }
+  ]
+}
