@@ -3,9 +3,9 @@ const fs = require("fs");
 const { webpack_4_0, webpack4, webpack5, plugins } = require("./index");
 const LogRuntimeHooksOrderPlugin = require("log-runtime-hooks-order-webpack-plugin");
 
-const { CleanWebpackPlugin } = plugins;
+const { CleanWebpackPlugin, LogStatsPlugin } = plugins;
 
-const TARGET_CASE = "step3";
+const TARGET_CASE = "step6-1";
 
 const cwd = path.join(process.cwd(), TARGET_CASE);
 
@@ -102,7 +102,7 @@ function commonWebpackConfig() {
     mode: "development",
     entry: {
       entry: "./src/entry.js",
-      // home: "./src/home.js",
+      home: "./src/home.js",
     },
     context: cwd,
     target: "web",
@@ -117,6 +117,7 @@ function commonWebpackConfig() {
     },
     plugins: [
       //new LogRuntimeHooksOrderPlugin()
+      new LogStatsPlugin(),
     ],
   };
 
@@ -131,6 +132,9 @@ function commonWebpackConfig() {
   const compiler = webpack(config);
 
   compiler.run((err, stats) => {
+    if(err) {
+      console.log(err)
+    }
     if (stats && stats.toJson) {
       let json = stats.toJson({
         chunks: true,

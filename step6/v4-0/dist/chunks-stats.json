@@ -1,0 +1,56 @@
+[
+  {
+    "id": "entry",
+    "names": [
+      "entry"
+    ],
+    "files": [
+      "entry.js"
+    ],
+    "parents": [],
+    "modules": [
+      "./src/entry.js"
+    ]
+  },
+  {
+    "id": 0,
+    "names": [],
+    "files": [
+      "0.js"
+    ],
+    "parents": [
+      "entry"
+    ],
+    "modules": [
+      "./src/a.js"
+    ]
+  },
+  {
+    "id": 1,
+    "names": [],
+    "files": [
+      "1.js"
+    ],
+    "parents": [
+      "entry"
+    ],
+    "modules": [
+      "./src/b.js"
+    ]
+  },
+  {
+    "id": 2,
+    "names": [],
+    "files": [
+      "2.js"
+    ],
+    "parents": [
+      "entry",
+      0,
+      1
+    ],
+    "modules": [
+      "./src/share.js"
+    ]
+  }
+]

@@ -1,0 +1,312 @@
+{
+  "chunks": [
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 7966,
+      "sizes": {
+        "javascript": 79,
+        "runtime": 7887
+      },
+      "names": [
+        "entry"
+      ],
+      "idHints": [],
+      "runtime": [
+        "entry"
+      ],
+      "files": [
+        "entry.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "cefcd992580d83a24377",
+      "childrenByOrder": {},
+      "modules": [
+        {
+          "type": "runtime modules",
+          "moduleType": "runtime",
+          "filteredChildren": 10,
+          "size": 7887,
+          "sizes": {
+            "runtime": 7887
+          }
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 79,
+          "sizes": {
+            "javascript": 79
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "E:\\playground\\step6-1\\src\\entry.js",
+          "name": "./src/entry.js",
+          "nameForCondition": "E:\\playground\\step6-1\\src\\entry.js",
+          "index": 0,
+          "preOrderIndex": 0,
+          "index2": 0,
+          "postOrderIndex": 0,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0
+        }
+      ]
+    },
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 7950,
+      "sizes": {
+        "javascript": 64,
+        "runtime": 7886
+      },
+      "names": [
+        "home"
+      ],
+      "idHints": [],
+      "runtime": [
+        "home"
+      ],
+      "files": [
+        "home.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "104495bf6f6c1adf04e8",
+      "childrenByOrder": {},
+      "modules": [
+        {
+          "type": "runtime modules",
+          "moduleType": "runtime",
+          "filteredChildren": 10,
+          "size": 7886,
+          "sizes": {
+            "runtime": 7886
+          }
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 64,
+          "sizes": {
+            "javascript": 64
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "E:\\playground\\step6-1\\src\\home.js",
+          "name": "./src/home.js",
+          "nameForCondition": "E:\\playground\\step6-1\\src\\home.js",
+          "index": 1,
+          "preOrderIndex": 1,
+          "index2": 1,
+          "postOrderIndex": 1,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0
+        }
+      ]
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 51,
+      "sizes": {
+        "javascript": 51
+      },
+      "names": [
+        "share"
+      ],
+      "idHints": [],
+      "runtime": [
+        "entry",
+        "home"
+      ],
+      "files": [
+        "share.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "0da819089efaac13b52c",
+      "childrenByOrder": {},
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 51,
+          "sizes": {
+            "javascript": 51
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "E:\\playground\\step6-1\\src\\share.js",
+          "name": "./src/share.js",
+          "nameForCondition": "E:\\playground\\step6-1\\src\\share.js",
+          "index": 4,
+          "preOrderIndex": 4,
+          "index2": 4,
+          "postOrderIndex": 4,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": "E:\\playground\\step6-1\\src\\home.js",
+          "issuerName": "./src/home.js",
+          "issuerPath": [
+            {
+              "identifier": "E:\\playground\\step6-1\\src\\home.js",
+              "name": "./src/home.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0
+        }
+      ]
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 49,
+      "sizes": {
+        "javascript": 49
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "entry"
+      ],
+      "files": [
+        "src_a_js.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "8ff40db8b7e905ba10c5",
+      "childrenByOrder": {},
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 49,
+          "sizes": {
+            "javascript": 49
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "E:\\playground\\step6-1\\src\\a.js",
+          "name": "./src/a.js",
+          "nameForCondition": "E:\\playground\\step6-1\\src\\a.js",
+          "index": 2,
+          "preOrderIndex": 2,
+          "index2": 2,
+          "postOrderIndex": 2,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": "E:\\playground\\step6-1\\src\\entry.js",
+          "issuerName": "./src/entry.js",
+          "issuerPath": [
+            {
+              "identifier": "E:\\playground\\step6-1\\src\\entry.js",
+              "name": "./src/entry.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0
+        }
+      ]
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 49,
+      "sizes": {
+        "javascript": 49
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "entry",
+        "home"
+      ],
+      "files": [
+        "src_b_js.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "7873a2ac974da72182dd",
+      "childrenByOrder": {},
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 49,
+          "sizes": {
+            "javascript": 49
+          },
+          "built": true,
+          "codeGenerated": true,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "E:\\playground\\step6-1\\src\\b.js",
+          "name": "./src/b.js",
+          "nameForCondition": "E:\\playground\\step6-1\\src\\b.js",
+          "index": 3,
+          "preOrderIndex": 3,
+          "index2": 3,
+          "postOrderIndex": 3,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": "E:\\playground\\step6-1\\src\\home.js",
+          "issuerName": "./src/home.js",
+          "issuerPath": [
+            {
+              "identifier": "E:\\playground\\step6-1\\src\\home.js",
+              "name": "./src/home.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0
+        }
+      ]
+    }
+  ]
+}

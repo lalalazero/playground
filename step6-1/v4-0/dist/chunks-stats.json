@@ -1,0 +1,88 @@
+[
+  {
+    "id": "entry",
+    "names": [
+      "entry"
+    ],
+    "files": [
+      "entry.js"
+    ],
+    "parents": [],
+    "modules": [
+      {
+        "id": "./src/entry.js",
+        "name": "./src/entry.js"
+      }
+    ]
+  },
+  {
+    "id": "home",
+    "names": [
+      "home"
+    ],
+    "files": [
+      "home.js"
+    ],
+    "parents": [],
+    "modules": [
+      {
+        "id": "./src/home.js",
+        "name": "./src/home.js"
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "names": [],
+    "files": [
+      "0.js"
+    ],
+    "parents": [
+      "entry",
+      "home"
+    ],
+    "modules": [
+      {
+        "id": "./src/b.js",
+        "name": "./src/b.js"
+      }
+    ]
+  },
+  {
+    "id": "share",
+    "names": [
+      "share"
+    ],
+    "files": [
+      "share.js"
+    ],
+    "parents": [
+      "entry",
+      "home",
+      0,
+      1
+    ],
+    "modules": [
+      {
+        "id": "./src/share.js",
+        "name": "./src/share.js"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "names": [],
+    "files": [
+      "1.js"
+    ],
+    "parents": [
+      "entry"
+    ],
+    "modules": [
+      {
+        "id": "./src/a.js",
+        "name": "./src/a.js"
+      }
+    ]
+  }
+]

@@ -1,0 +1,193 @@
+[
+  {
+    "id": "entry",
+    "names": [
+      "entry"
+    ],
+    "files": [
+      "entry.js"
+    ],
+    "parents": [],
+    "modules": [
+      {
+        "id": "./src/entry.js",
+        "name": "./src/entry.js",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/create fake namespace object",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/define property getters",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/ensure chunk",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/get javascript chunk filename",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/global",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/hasOwnProperty shorthand",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/jsonp chunk loading",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/load script",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/make namespace object",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/publicPath",
+        "type": "module"
+      }
+    ]
+  },
+  {
+    "id": "home",
+    "names": [
+      "home"
+    ],
+    "files": [
+      "home.js"
+    ],
+    "parents": [],
+    "modules": [
+      {
+        "id": "./src/home.js",
+        "name": "./src/home.js",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/create fake namespace object",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/define property getters",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/ensure chunk",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/get javascript chunk filename",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/global",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/hasOwnProperty shorthand",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/jsonp chunk loading",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/load script",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/make namespace object",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/publicPath",
+        "type": "module"
+      }
+    ]
+  },
+  {
+    "id": "share",
+    "names": [
+      "share"
+    ],
+    "files": [
+      "share.js"
+    ],
+    "parents": [
+      "entry",
+      "home",
+      "src_a_js",
+      "src_b_js"
+    ],
+    "modules": [
+      {
+        "id": "./src/share.js",
+        "name": "./src/share.js",
+        "type": "module"
+      }
+    ]
+  },
+  {
+    "id": "src_a_js",
+    "names": [],
+    "files": [
+      "src_a_js.js"
+    ],
+    "parents": [
+      "entry"
+    ],
+    "modules": [
+      {
+        "id": "./src/a.js",
+        "name": "./src/a.js",
+        "type": "module"
+      }
+    ]
+  },
+  {
+    "id": "src_b_js",
+    "names": [],
+    "files": [
+      "src_b_js.js"
+    ],
+    "parents": [
+      "entry",
+      "home"
+    ],
+    "modules": [
+      {
+        "id": "./src/b.js",
+        "name": "./src/b.js",
+        "type": "module"
+      }
+    ]
+  }
+]
