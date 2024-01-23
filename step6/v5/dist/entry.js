@@ -15,19 +15,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/b.js":
-/*!******************!*\
-  !*** ./src/b.js ***!
-  \******************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _share_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./share.js */ "./src/share.js");
-
-
-
-/***/ }),
-
 /***/ "./src/share.js":
 /*!**********************!*\
   !*** ./src/share.js ***!
@@ -302,10 +289,9 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _a_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./a.js */ "./src/a.js");
-/* harmony import */ var _b_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./b.js */ "./src/b.js");
 
 
-
+__webpack_require__.e(/*! import() */ "src_b_js").then(__webpack_require__.bind(__webpack_require__, /*! ./b.js */ "./src/b.js"))
 __webpack_require__.e(/*! import() | dynamic-chunk-1 */ "dynamic-chunk-1").then(__webpack_require__.bind(__webpack_require__, /*! ./dynamic.js */ "./src/dynamic.js")).then((mod) => {
   console.log(mod)
 })

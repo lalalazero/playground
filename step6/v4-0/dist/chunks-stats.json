@@ -9,7 +9,8 @@
     ],
     "parents": [
       "entry",
-      "home"
+      "home",
+      0
     ],
     "modules": [
       {
@@ -31,10 +32,6 @@
       {
         "id": "./src/a.js",
         "name": "./src/a.js"
-      },
-      {
-        "id": "./src/b.js",
-        "name": "./src/b.js"
       },
       {
         "id": "./src/entry.js",
@@ -67,6 +64,22 @@
       {
         "id": "./src/share.js",
         "name": "./src/share.js"
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "names": [],
+    "files": [
+      "0.js"
+    ],
+    "parents": [
+      "entry"
+    ],
+    "modules": [
+      {
+        "id": "./src/b.js",
+        "name": "./src/b.js"
       }
     ]
   }
