@@ -5,7 +5,7 @@ const LogRuntimeHooksOrderPlugin = require("log-runtime-hooks-order-webpack-plug
 
 const { CleanWebpackPlugin, LogStatsPlugin } = plugins;
 
-const TARGET_CASE = "step6-1";
+const TARGET_CASE = "step6";
 
 const cwd = path.join(process.cwd(), TARGET_CASE);
 

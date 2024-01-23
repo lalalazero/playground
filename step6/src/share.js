@@ -1,1 +1,1 @@
-export const share = 'share-mod'
+export default 'share-mod'

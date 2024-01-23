@@ -1,0 +1,171 @@
+[
+  {
+    "id": "dynamic-chunk-1",
+    "names": [
+      "dynamic-chunk-1"
+    ],
+    "files": [
+      "dynamic-chunk-1.js"
+    ],
+    "parents": [
+      "entry",
+      "home"
+    ],
+    "modules": [
+      {
+        "id": "./src/dynamic.js",
+        "name": "./src/dynamic.js",
+        "type": "module"
+      }
+    ]
+  },
+  {
+    "id": "entry",
+    "names": [
+      "entry"
+    ],
+    "files": [
+      "entry.js"
+    ],
+    "parents": [],
+    "modules": [
+      {
+        "id": "./src/a.js",
+        "name": "./src/a.js",
+        "type": "module"
+      },
+      {
+        "id": "./src/b.js",
+        "name": "./src/b.js",
+        "type": "module"
+      },
+      {
+        "id": "./src/entry.js",
+        "name": "./src/entry.js",
+        "type": "module"
+      },
+      {
+        "id": "./src/share.js",
+        "name": "./src/share.js",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/define property getters",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/ensure chunk",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/get javascript chunk filename",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/global",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/hasOwnProperty shorthand",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/jsonp chunk loading",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/load script",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/make namespace object",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/publicPath",
+        "type": "module"
+      }
+    ]
+  },
+  {
+    "id": "home",
+    "names": [
+      "home"
+    ],
+    "files": [
+      "home.js"
+    ],
+    "parents": [],
+    "modules": [
+      {
+        "id": "./src/b.js",
+        "name": "./src/b.js",
+        "type": "module"
+      },
+      {
+        "id": "./src/home.js",
+        "name": "./src/home.js",
+        "type": "module"
+      },
+      {
+        "id": "./src/share.js",
+        "name": "./src/share.js",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/define property getters",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/ensure chunk",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/get javascript chunk filename",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/global",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/hasOwnProperty shorthand",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/jsonp chunk loading",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/load script",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/make namespace object",
+        "type": "module"
+      },
+      {
+        "id": "",
+        "name": "webpack/runtime/publicPath",
+        "type": "module"
+      }
+    ]
+  }
+]
