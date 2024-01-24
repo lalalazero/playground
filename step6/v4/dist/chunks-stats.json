@@ -1,9 +1,11 @@
 [
   {
-    "id": 0,
-    "names": [],
+    "id": "async-chunk-0",
+    "names": [
+      "async-chunk-0"
+    ],
     "files": [
-      "0.js"
+      "async-chunk-0.js"
     ],
     "parents": [
       "entry"
@@ -24,7 +26,7 @@
       "dynamic-chunk-1.js"
     ],
     "parents": [
-      0,
+      "async-chunk-0",
       "entry",
       "home"
     ],

@@ -1,5 +1,24 @@
 [
   {
+    "id": "async-chunk-0",
+    "names": [
+      "async-chunk-0"
+    ],
+    "files": [
+      "async-chunk-0.js"
+    ],
+    "parents": [
+      "entry"
+    ],
+    "modules": [
+      {
+        "id": "./src/b.js",
+        "name": "./src/b.js",
+        "type": "module"
+      }
+    ]
+  },
+  {
     "id": "dynamic-chunk-1",
     "names": [
       "dynamic-chunk-1"
@@ -8,9 +27,9 @@
       "dynamic-chunk-1.js"
     ],
     "parents": [
+      "async-chunk-0",
       "entry",
-      "home",
-      "src_b_js"
+      "home"
     ],
     "modules": [
       {
@@ -160,23 +179,6 @@
       {
         "id": "",
         "name": "webpack/runtime/publicPath",
-        "type": "module"
-      }
-    ]
-  },
-  {
-    "id": "src_b_js",
-    "names": [],
-    "files": [
-      "src_b_js.js"
-    ],
-    "parents": [
-      "entry"
-    ],
-    "modules": [
-      {
-        "id": "./src/b.js",
-        "name": "./src/b.js",
         "type": "module"
       }
     ]

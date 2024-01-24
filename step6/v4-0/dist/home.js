@@ -198,6 +198,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _b_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./b.js */"./src/b.js");
 
 
+Promise.reject(function webpackMissingModule() { var e = new Error("Cannot find module \"./not-exist.js\""); e.code = 'MODULE_NOT_FOUND';; return e; }())
 __webpack_require__.e/* import() */("dynamic-chunk-1"/*! dynamic-chunk-1 */).then(__webpack_require__.bind(null, /*! ./dynamic.js */"./src/dynamic.js")).then((mod) => {
   console.log(mod)
 })

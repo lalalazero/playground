@@ -291,7 +291,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _a_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./a.js */ "./src/a.js");
 
 
-__webpack_require__.e(/*! import() */ "src_b_js").then(__webpack_require__.bind(__webpack_require__, /*! ./b.js */ "./src/b.js"))
+__webpack_require__.e(/*! import() | async-chunk-0 */ "async-chunk-0").then(__webpack_require__.bind(__webpack_require__, /*! ./b.js */ "./src/b.js"))
 __webpack_require__.e(/*! import() | dynamic-chunk-1 */ "dynamic-chunk-1").then(__webpack_require__.bind(__webpack_require__, /*! ./dynamic.js */ "./src/dynamic.js")).then((mod) => {
   console.log(mod)
 })

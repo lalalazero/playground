@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunk"] = self["webpackChunk"] || []).push([["src_b_js"],{
+(self["webpackChunk"] = self["webpackChunk"] || []).push([["async-chunk-0"],{
 
 /***/ "./src/b.js":
 /*!******************!*\

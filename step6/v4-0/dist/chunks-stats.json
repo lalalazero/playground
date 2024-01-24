@@ -1,5 +1,23 @@
 [
   {
+    "id": "async-chunk-0",
+    "names": [
+      "async-chunk-0"
+    ],
+    "files": [
+      "async-chunk-0.js"
+    ],
+    "parents": [
+      "entry"
+    ],
+    "modules": [
+      {
+        "id": "./src/b.js",
+        "name": "./src/b.js"
+      }
+    ]
+  },
+  {
     "id": "dynamic-chunk-1",
     "names": [
       "dynamic-chunk-1"
@@ -8,9 +26,9 @@
       "dynamic-chunk-1.js"
     ],
     "parents": [
+      "async-chunk-0",
       "entry",
-      "home",
-      0
+      "home"
     ],
     "modules": [
       {
@@ -64,22 +82,6 @@
       {
         "id": "./src/share.js",
         "name": "./src/share.js"
-      }
-    ]
-  },
-  {
-    "id": 0,
-    "names": [],
-    "files": [
-      "0.js"
-    ],
-    "parents": [
-      "entry"
-    ],
-    "modules": [
-      {
-        "id": "./src/b.js",
-        "name": "./src/b.js"
       }
     ]
   }
