@@ -1,0 +1,103 @@
+第一步结束，得到 basic chunk graph
+1000/entry
+         modules: ./src/entry.js, ./src/a.js, ./src/share.js
+          dep chunks:
+                   1005/async-chunk-0
+                   modules: ./src/b.js, ./src/share.js
+                    dep chunks:
+                             1004/async-chunk-1004
+                             modules: ./src/dynamic.js
+
+                   1006/async-chunk-1006
+                   modules: ./src/dynamic.js
+
+1001/home
+         modules: ./src/home.js, ./src/b.js, ./src/share.js
+          dep chunks:
+                   1002/chunk-not-exist
+                   modules: --
+                   1003/async-chunk-1003
+                   modules: ./src/dynamic.js
+                   1004/async-chunk-1004
+                   modules: ./src/dynamic.js
+
+
+第二步开始
+
+
+visit chunk  entry null 1000
+set 1000/entry min modules []
+所有 modules : ./src/entry.js, ./src/a.js, ./src/share.js
+依赖的 depChunk  1005 async-chunk-0
+chunk async-chunk-0/1005 包含的 ./src/b.js  不在 所有 modules 里
+不过滤
+依赖的 depChunk  1006 async-chunk-1006
+chunk async-chunk-1006/1006 包含的 ./src/dynamic.js  不在 所有 modules 里
+不过滤
+
+visit chunk  home null 1001
+set 1001/home min modules []
+所有 modules : ./src/home.js, ./src/b.js, ./src/share.js
+依赖的 depChunk  1002 chunk-not-exist
+过滤
+依赖的 depChunk  1003 async-chunk-1003
+chunk async-chunk-1003/1003 包含的 ./src/dynamic.js  不在 所有 modules 里
+不过滤
+依赖的 depChunk  1004 async-chunk-1004
+chunk async-chunk-1004/1004 包含的 ./src/dynamic.js  不在 所有 modules 里
+不过滤
+1001 home 过滤掉了一些子 chunks
+1002 chunk-not-exist
+
+visit chunk  async-chunk-0 null 1005
+set 1005/async-chunk-0 min modules ./src/entry.js, ./src/a.js, ./src/share.js
+所有 modules : ./src/entry.js, ./src/a.js, ./src/share.js, ./src/b.js
+依赖的 depChunk  1004 async-chunk-1004
+chunk async-chunk-1004/1004 包含的 ./src/dynamic.js  不在 所有 modules 里
+不过滤
+
+visit chunk  async-chunk-1006 null 1006
+set 1006/async-chunk-1006 min modules ./src/entry.js, ./src/a.js, ./src/share.js
+没有子 chunk 跳过
+
+visit chunk  async-chunk-1003 null 1003
+set 1003/async-chunk-1003 min modules ./src/home.js, ./src/b.js, ./src/share.js
+没有子 chunk 跳过
+
+visit chunk  async-chunk-1004 null 1004
+set 1004/async-chunk-1004 min modules ./src/home.js, ./src/b.js, ./src/share.js
+没有子 chunk 跳过
+
+visit chunk  async-chunk-1004 null 1004
+1004 deleted..module: E:\playground\step6-no-chunk-name\src\home.js
+没有子 chunk 跳过
+remove unconnected chunk chunk-not-exist null 1002
+
+两个步骤都结束了
+1000 entry
+        依赖的 chunks1005/async-chunk-0, 1006/async-chunk-1006
+        包含的 modules./src/entry.js, ./src/a.js, ./src/share.js
+
+1005 async-chunk-0
+        依赖的 chunks1004/async-chunk-1004
+        包含的 modules./src/b.js, ./src/share.js
+
+1004 async-chunk-1004
+        依赖的 chunks
+        包含的 modules./src/dynamic.js
+
+1006 async-chunk-1006
+        依赖的 chunks
+        包含的 modules./src/dynamic.js
+
+1001 home
+        依赖的 chunks1003/async-chunk-1003, 1004/async-chunk-1004
+        包含的 modules./src/home.js, ./src/b.js, ./src/share.js
+
+1003 async-chunk-1003
+        依赖的 chunks
+        包含的 modules./src/dynamic.js
+
+1004 async-chunk-1004
+        依赖的 chunks
+        包含的 modules./src/dynamic.js

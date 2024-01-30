@@ -1,0 +1,88 @@
+第一步结束，得到 basic chunk graph
+home / 1001
+   modules: ./src/home.js, ./src/b.js, ./src/share.js
+   chunks: 1002/chunk-not-exist/
+     modules:, 1003/dynamic-chunk-1/
+     modules:./src/dynamic.js, 1003/dynamic-chunk-1/
+     modules:./src/dynamic.js
+entry / 1000
+   modules: ./src/entry.js, ./src/a.js, ./src/share.js
+   chunks: 1004/async-chunk-0/
+     modules:./src/b.js, ./src/share.js, 1003/dynamic-chunk-1/
+     modules:./src/dynamic.js
+async-chunk-0 / 1004
+   modules: ./src/b.js, ./src/share.js
+   chunks: 1003/dynamic-chunk-1/
+     modules:./src/dynamic.js
+
+第二步开始
+
+
+visit chunk  entry null 1000
+set 1000/entry min modules []
+所有 modules : ./src/entry.js, ./src/a.js, ./src/share.js
+依赖的 depChunk  1004 async-chunk-0
+chunk async-chunk-0/1004 包含的 ./src/b.js  不在 所有 modules 里
+不过滤
+依赖的 depChunk  1003 dynamic-chunk-1
+chunk dynamic-chunk-1/1003 包含的 ./src/dynamic.js  不在 所有 modules 里
+不过滤
+
+visit chunk  home null 1001
+set 1001/home min modules []
+所有 modules : ./src/home.js, ./src/b.js, ./src/share.js
+依赖的 depChunk  1002 chunk-not-exist
+过滤
+依赖的 depChunk  1003 dynamic-chunk-1
+chunk dynamic-chunk-1/1003 包含的 ./src/dynamic.js  不在 所有 modules 里
+不过滤
+依赖的 depChunk  1003 dynamic-chunk-1
+chunk dynamic-chunk-1/1003 包含的 ./src/dynamic.js  不在 所有 modules 里
+不过滤
+1001 home 过滤掉了一些子 chunks
+1002 chunk-not-exist
+
+visit chunk  async-chunk-0 null 1004
+set 1004/async-chunk-0 min modules ./src/entry.js, ./src/a.js, ./src/share.js
+所有 modules : ./src/entry.js, ./src/a.js, ./src/share.js, ./src/b.js
+依赖的 depChunk  1003 dynamic-chunk-1
+chunk dynamic-chunk-1/1003 包含的 ./src/dynamic.js  不在 所有 modules 里
+不过滤
+
+visit chunk  dynamic-chunk-1 null 1003
+set 1003/dynamic-chunk-1 min modules ./src/entry.js, ./src/a.js, ./src/share.js
+没有子 chunk 跳过
+
+visit chunk  dynamic-chunk-1 null 1003
+1003 deleted..module: E:\playground\step6\src\entry.js
+1003 deleted..module: E:\playground\step6\src\a.js
+没有子 chunk 跳过
+
+visit chunk  dynamic-chunk-1 null 1003
+没有删除 module，1003 跳过
+remove unconnected chunk chunk-not-exist null 1002
+
+两个步骤都结束了
+1000 entry
+        依赖的 chunks1004/async-chunk-0, 1003/dynamic-chunk-1
+        包含的 modules./src/entry.js, ./src/a.js, ./src/share.js
+
+1004 async-chunk-0
+        依赖的 chunks1003/dynamic-chunk-1
+        包含的 modules./src/b.js, ./src/share.js
+
+1003 dynamic-chunk-1
+        依赖的 chunks
+        包含的 modules./src/dynamic.js
+
+1003 dynamic-chunk-1
+        依赖的 chunks
+        包含的 modules./src/dynamic.js
+
+1001 home
+        依赖的 chunks1003/dynamic-chunk-1
+        包含的 modules./src/home.js, ./src/b.js, ./src/share.js
+
+1003 dynamic-chunk-1
+        依赖的 chunks
+        包含的 modules./src/dynamic.js
